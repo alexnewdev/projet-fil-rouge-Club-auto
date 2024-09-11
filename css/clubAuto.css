@@ -887,7 +887,7 @@ ul {
   font-size: 0.9rem;
   padding: 0.9rem 0 0 1.2rem;
 }
-@media (max-width: 1100px) {
+@media (max-width: 960px) {
   html,
   body {
     margin: 0;
@@ -928,15 +928,15 @@ ul {
   }
 
   .mainHeader {
-    display: flex; /* Assure l'usage de l'espace disponible */
-    justify-content: space-between; /* Assure que le contenu est bien positionné */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    position: relative; /* Positionne le header correctement */
-    width: 100%; /* Prend toute la largeur */
-    max-width: 100%; /* Assure qu'aucune restriction ne s'applique */
-    margin: 0; /* Supprime les marges */
-    padding: 30px 0 100px; /* Supprime les paddings */
-    /*box-sizing: border-box;  Assure que le padding ne modifie pas la largeur */
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 30px 0 100px;
+
     overflow: hidden;
   }
 
@@ -957,11 +957,11 @@ ul {
   .menuBurger {
     margin-top: -10px;
     display: flex;
-    z-index: 100;
-    margin-left: auto; /* Pousse le menu à droite */
-    margin-right: 30px; /* Ajuste cette valeur pour l'approcher davantage du bord */
-    width: 50px;
+    z-index: 1000;
+    margin-left: auto;
+    margin-right: 30px;
     height: auto;
+    width: 60px;
   }
 
   .slogan {
@@ -982,17 +982,16 @@ ul {
   .articles {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Prend toute la largeur */
-    max-width: 100%; /* Assure qu'aucune restriction ne s'applique */
+    width: 100%;
+    max-width: 100%;
     overflow: hidden;
   }
 
-  .vehiculesContainer,
-  .horairesReseaux {
+  .vehiculesContainer {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Prend toute la largeur */
-    max-width: 100%; /* Assure qu'aucune restriction ne s'applique */
+    width: 100%;
+    max-width: 100%;
     overflow: hidden;
   }
 
@@ -1012,7 +1011,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 130vh;
+    height: 200vh;
     overflow: hidden;
     position: relative;
     padding-top: 10px;
@@ -1170,9 +1169,9 @@ ul {
     font-size: 1.5em;
     margin: 0 0 10px 0;
     padding: 0;
-    max-width: 90%; /* Élargir au maximum sans coupure */
-    overflow: visible; /* S'assurer que le contenu dépasse si besoin */
-    white-space: normal; /* Permet de couper les lignes sans forcer */
+    max-width: 90%;
+    overflow: visible;
+    white-space: normal;
   }
 
   .services p {
@@ -1235,8 +1234,88 @@ ul {
     margin: 0 0 15%;
     padding: 5% 10% 10% 10%;
     font-size: 1.6rem;
-    max-width: 90%; /* Élargir au maximum sans coupure */
-    overflow: visible; /* S'assurer que le contenu dépasse si besoin */
-    white-space: normal; /* Permet de couper les lignes sans forcer */
+    max-width: 90%;
+    overflow: visible;
+    white-space: normal;
+  }
+  .sectionHorairesReseaux {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .horairesReseaux > div {
+    flex: 1; /* Permet aux divs de s'étendre */
+    max-width: none; /* Enlève la contrainte de largeur */
+    /* margin: 3% 0 0;
+    padding: 3% 0 0; */
+    overflow: hidden;
+  }
+
+  .horairesReseaux {
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .horairesReseaux h4 {
+    margin: 2%;
+  }
+  .horairesSemaine {
+    width: 100%;
+    height: auto;
+  }
+  .horairesSemaine p,
+  .horairesSemaine h4,
+  .horairesReseaux p {
+    height: auto;
+    width: auto;
+    margin: 2% 0 2% 3%;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .horairesReseauxTitreBleu {
+    margin: 1% 10% 0 1%;
+    text-align: left;
+  }
+
+  .horairesReseauxTitreBleu h4 {
+    padding-left: 2%;
+  }
+  .horairesReseauxNewsletter,
+  .horairesReseauxLogoReseaux {
+    margin-left: 3%;
+    padding-bottom: 6%;
+  }
+  .horairesReseauxNewsletter h4,
+  .horairesReseauxLogoReseaux h4 {
+    margin: 0 8% 5% 0;
+  }
+
+  .sectionHorairesReseaux::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    border-bottom: 1px solid gray;
+    opacity: 0.7;
+  }
+
+  .logoReseaux svg {
+    height: 60px;
+    width: auto;
+    gap: 3%;
+  }
+
+  .horairesReseauxNewsletter p {
+    margin: 0 8% 0 0;
+  }
+  .mainFooter {
+    padding: 6% 0% 10% 0;
   }
 }
