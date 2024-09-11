@@ -807,26 +807,28 @@ ul {
 .formulaireBody {
   background-color: var(--gris);
 }
-
 .formulaireSectionContactezNous {
   position: relative;
+  overflow: hidden;
 }
 
-.formulaireSectionContactezNous img {
-  width: 100%;
-  height: 23rem;
-  object-fit: cover;
-  object-position: center top;
-  margin-top: -3.7rem;
-  margin-bottom: 21rem;
+.formulaireVehicule {
+  background-image: url(/images/vehicule3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  margin-bottom: 50vh;
 }
 
 .formulaire {
   position: absolute;
+  margin: 0 auto;
   top: 15%;
   left: 15%;
   z-index: 10;
   width: 70%;
+  max-width: 100%;
   background-color: var(--blanc);
   box-sizing: border-box;
   padding: 2.5rem 5rem;
@@ -842,6 +844,7 @@ ul {
   display: flex;
   justify-content: space-between;
   gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
 .formulaireColonne {
@@ -1247,10 +1250,9 @@ ul {
   }
 
   .horairesReseaux > div {
-    flex: 1; /* Permet aux divs de s'étendre */
-    max-width: none; /* Enlève la contrainte de largeur */
-    /* margin: 3% 0 0;
-    padding: 3% 0 0; */
+    flex: 1;
+    max-width: none;
+
     overflow: hidden;
   }
 

@@ -1,0 +1,214 @@
+@media (max-width: 960px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .containerResponsive {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .containerResponsive * {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    position: static;
+  }
+
+  .icone,
+  .ouverture-horaires,
+  .social-media,
+  .photoAccueil,
+  .mainNav {
+    display: none;
+  }
+
+  .mainHeader {
+    display: flex;
+    align-items: start;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 6%;
+
+    overflow: hidden;
+  }
+
+  .mainHeader .accessibility {
+    display: flex;
+  }
+
+  .mainHeaderTitre {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .mainHeader h1 {
+    margin: 0;
+    padding-left: 4%;
+    font-size: 3.1em;
+    white-space: nowrap;
+  }
+
+  .iconeTelephone {
+    width: 55px;
+  }
+
+  .plusEpais1 {
+    margin-top: 0.2rem;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .mainHeader {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .contact-info {
+    margin-top: 25px;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 1.4em;
+    padding: 5% 0;
+  }
+
+  .mainHeaderBurger {
+    margin-top: -20%;
+    margin-left: 84%;
+  }
+  .menuBurger {
+    display: flex;
+    z-index: 1000;
+    margin-left: 0%;
+    margin-right: 0;
+    height: auto;
+    width: 60px;
+  }
+  .formulaire {
+    width: 90%;
+    padding: 1.5rem 2rem;
+    margin-left: 5%;
+    margin-top: -80%;
+    top: 0;
+    z-index: 10;
+    background-color: var(--blanc);
+    box-sizing: border-box;
+  }
+
+  .formulaireSectionContactezNous {
+    margin-bottom: 10%;
+  }
+
+  .formulaireVehicule {
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  .formulaireChampACompleter {
+    flex-direction: column;
+  }
+
+  .formulaireColonne input,
+  .formulaireColonne textarea {
+    width: 100%;
+  }
+  .contactezNous {
+    padding: 4% 8%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 30%;
+  }
+  .sectionHorairesReseaux {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .horairesReseaux > div {
+    flex: 1;
+    max-width: none;
+
+    overflow: hidden;
+  }
+
+  .horairesReseaux {
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .horairesReseaux h4 {
+    margin: 2%;
+  }
+  .horairesSemaine {
+    width: 100%;
+    height: auto;
+  }
+  .horairesSemaine p,
+  .horairesSemaine h4,
+  .horairesReseaux p {
+    height: auto;
+    width: auto;
+    margin: 2% 0 2% 3%;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .horairesReseauxTitreBleu {
+    margin: 1% 10% 0 1%;
+    text-align: left;
+  }
+
+  .horairesReseauxTitreBleu h4 {
+    padding-left: 2%;
+  }
+  .horairesReseauxNewsletter,
+  .horairesReseauxLogoReseaux {
+    margin-left: 3%;
+    padding-bottom: 6%;
+  }
+  .horairesReseauxNewsletter h4,
+  .horairesReseauxLogoReseaux h4 {
+    margin: 0 8% 5% 0;
+  }
+
+  .sectionHorairesReseaux::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    border-bottom: 1px solid gray;
+    opacity: 0.7;
+  }
+
+  .logoReseaux svg {
+    height: 60px;
+    width: auto;
+    gap: 3%;
+  }
+
+  .horairesReseauxNewsletter p {
+    margin: 0 8% 0 0;
+  }
+  .mainFooter {
+    padding: 6% 0% 10% 0;
+  }
+}
