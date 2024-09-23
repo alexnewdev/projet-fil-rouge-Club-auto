@@ -9,7 +9,7 @@
   --noir: #232628;
   --bleu: #6c98e1;
 }
-/* Typographie générale */
+/* Typographie gÃ©nÃ©rale */
 body,
 form,
 p {
@@ -257,7 +257,7 @@ ul {
   width: 100%;
 }
 .vehiculesLouerOuAcheter {
-  background-image: url(/images/vehicule1.jpg);
+  background-image: url(../images/vehicule1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -309,7 +309,7 @@ ul {
   color: var(--blanc);
 }
 
-/* Section Offres de Véhicules */
+/* Section Offres de VÃ©hicules */
 .offresVehicules {
   background-color: var(--noir);
   display: flex;
@@ -336,7 +336,7 @@ ul {
   justify-content: flex-start;
 }
 
-/* Véhicules Récents */
+/* VÃ©hicules RÃ©cents */
 .vehiculeRecents {
   flex: 1;
   max-width: 25rem;
@@ -428,24 +428,43 @@ ul {
 .contactInfos {
   display: flex;
   flex-direction: row;
-  margin-left: 15%;
-  margin-right: 15%;
   text-align: left;
   gap: 2rem; /* Remplace 30px  */
+}
+.contactInfos__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 1rem;
+}
+.contactInfos__img {
+  /*max-width: 60px;
+  width: 30%;*/
+  width: 30%;
+  text-align: center;
+}
+.contactInfos__item img {
+  display: inline-block;
+  width: clamp(60px, 100%, 80px);
+  height: auto;
+}
+.contactInfos__item div:nth-child(2) {
+  width: 70%;
 }
 
 /* Services */
 .services {
   position: relative;
-  padding-left: 2.5rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.services img {
+/*.services img {
   margin-top: 25%;
   margin-right: -1rem;
   height: 8vh;
   width: auto;
-}
+}*/
 
 .services p {
   color: grey;
@@ -463,11 +482,19 @@ ul {
   margin-bottom: 4%;
 }
 
+.services__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
 .services h3 {
+  margin: 0;
+  padding: 0;
   text-align: left;
   font-weight: 800;
   font-size: 1rem;
-  white-space: nowrap;
 }
 
 /* Bouton Contact */
@@ -495,9 +522,9 @@ ul {
 .paragrapheVenteEtLocImg {
   background-image: url(/images/vehicule3.jpg);
   background-size: cover; /* L'image couvre toute la section */
-  background-position: center; /* L'image est centrée */
-  background-repeat: no-repeat; /* Évite que l'image se répète */
-  height: 100vh; /* Hauteur de la section (100% de la hauteur de la fenêtre) */
+  background-position: center; /* L'image est centrÃ©e */
+  background-repeat: no-repeat; /* Ã‰vite que l'image se rÃ©pÃ¨te */
+  height: 100vh; /* Hauteur de la section (100% de la hauteur de la fenÃªtre) */
   z-index: -2;
 }
 
@@ -687,7 +714,7 @@ ul {
   margin: auto auto -1% 10%;
 }
 
-/* Détail du Véhicule */
+/* DÃ©tail du VÃ©hicule */
 .detailVehicule {
   max-width: 65%;
   width: 100%;
@@ -1125,13 +1152,11 @@ ul {
   }
 
   .contactInfos {
-    display: grid;
-    gap: 20px;
-    justify-content: stretch;
-    align-items: center;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 80%;
-    margin-bottom: 15%;
+    margin: 0 auto 15% auto;
   }
 
   .item1,
@@ -1158,14 +1183,6 @@ ul {
 
   .item3 {
     margin-left: 10px;
-  }
-
-  .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding: 5% 0;
-    margin: 5% 0;
   }
 
   .services h3 {
@@ -1241,30 +1258,35 @@ ul {
     overflow: visible;
     white-space: normal;
   }
+
   .sectionHorairesReseaux {
     display: flex;
-    width: 100%;
+    width: auto;
     margin: 0;
     padding: 0;
     position: relative;
+    align-items: center;
   }
 
   .horairesReseaux > div {
     flex: 1;
     max-width: none;
-
+    margin-top: 10%;
     overflow: hidden;
+    align-items: center;
   }
 
   .horairesReseaux {
     display: flex;
-    min-width: 100%;
+
+    min-width: 90%;
     flex-direction: column;
     flex-grow: 1;
   }
 
   .horairesReseaux h4 {
     margin: 2%;
+    align-items: center;
   }
   .horairesSemaine {
     width: 100%;
@@ -1278,6 +1300,7 @@ ul {
     margin: 2% 0 2% 3%;
     padding: 1%;
     overflow: hidden;
+    align-items: center;
   }
 
   .horairesReseauxTitreBleu {
@@ -1291,11 +1314,18 @@ ul {
   .horairesReseauxNewsletter,
   .horairesReseauxLogoReseaux {
     margin-left: 3%;
-    padding-bottom: 6%;
+    padding-bottom: 5%;
+  }
+
+  .newsletterFormulaire form {
+    margin-left: 5%;
+  }
+  .horairesReseaux h4 {
+    padding-left: 4%;
   }
   .horairesReseauxNewsletter h4,
   .horairesReseauxLogoReseaux h4 {
-    margin: 0 8% 5% 0;
+    margin: 0 8% 5% 5%;
   }
 
   .sectionHorairesReseaux::after {
@@ -1309,13 +1339,17 @@ ul {
   }
 
   .logoReseaux svg {
-    height: 60px;
+    height: 75px;
     width: auto;
-    gap: 3%;
+    gap: 2%;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 7%;
   }
 
   .horairesReseauxNewsletter p {
-    margin: 0 8% 0 0;
+    margin: 0 8% 0 5%;
   }
   .mainFooter {
     padding: 6% 0% 10% 0;

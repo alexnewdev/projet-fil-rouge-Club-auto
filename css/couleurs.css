@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.epaisseurDeTexte {
+  font-weight: 700;
+}
+body {
+  font-family: "Open Sans";
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.openSans {
+  font-family: "Open Sans";
+}
+:root {
+  --bs-body-bg: #eceff3;
+  --bs-primary: #fab637;
+  --bs-danger: #ff4848;
+  --bs-warning: #cc6119;
+  --bs-dark: #232628;
+  --bs-secondary: #6c98e1;
+  --bs-light: #ffffff; /* Je suppose que tu veux #FFFFFF comme couleur claire */
+}
+
+/* Écraser les classes Bootstrap */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-warning {
+  color: var(--bs-warning) !important;
+}
+
+.text-danger {
+  color: var(--bs-danger) !important;
+}
+
+.text-dark {
+  color: var(--bs-dark) !important;
+}
+
+.text-light {
+  color: var(--bs-light) !important;
+}
+
+/* Pour les backgrounds */
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.bg-warning {
+  background-color: var(--bs-warning) !important;
+}
+
+.bg-danger {
+  background-color: var(--bs-danger) !important;
+}
+
+.bg-dark {
+  background-color: var(--bs-dark) !important;
+}
+
+.bg-light {
+  background-color: var(--bs-light) !important;
+}
+
+/* Pour les boutons */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.btn-warning {
+  background-color: var(--bs-warning) !important;
+  border-color: var(--bs-warning) !important;
+}
+
+.btn-danger {
+  background-color: var(--bs-danger) !important;
+  border-color: var(--bs-danger) !important;
+}
