@@ -28,7 +28,8 @@ body {
   --bs-warning: #cc6119;
   --bs-dark: #232628;
   --bs-secondary: #6c98e1;
-  --bs-light: #ffffff; /* Je suppose que tu veux #FFFFFF comme couleur claire */
+  --bs-light: #ffffff;
+  --bs-gray: #373c3f;
 }
 
 /* Écraser les classes Bootstrap */
@@ -72,7 +73,12 @@ body {
 .bg-light {
   background-color: var(--bs-light) !important;
 }
-
+.bg-blue {
+  background-color: var(--bs-secondary) !important;
+}
+.bg-gray {
+  background-color: var(--bs-gray) !important;
+}
 /* Pour les boutons */
 .btn-primary {
   background-color: var(--bs-primary) !important;
@@ -81,10 +87,14 @@ body {
 
 .btn-warning {
   background-color: var(--bs-warning) !important;
-  border-color: var(--bs-warning) !important;
 }
 
 .btn-danger {
   background-color: var(--bs-danger) !important;
   border-color: var(--bs-danger) !important;
+}
+
+/* Pour les bordures */
+.border-warning {
+  border-color: var(--bs-warning) !important;
 }
