@@ -94,7 +94,15 @@ body {
   border-color: var(--bs-danger) !important;
 }
 
+.btn-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
 /* Pour les bordures */
 .border-warning {
   border-color: var(--bs-warning) !important;
+}
+
+.border-secondary {
+  background-color: var(--bs-secondary) !important;
 }
