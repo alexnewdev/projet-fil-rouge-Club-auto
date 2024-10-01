@@ -5,98 +5,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Club Auto</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-   <link rel="stylesheet" href="/css/couleurs.css"/>
+    <link rel="stylesheet" href="/css/couleurs.css" />
   </head>
   <body>
     <div>
-      <header class="container-fluid bg-dark py-4 m-0 d-flex  align-items-center">
-         <div class="col-1"></div>
-          <h1 class="text-white epaisseurDeTexte display-5 ms-5">CLUB AUTO</h1> <!-- Éloigné du bord gauche -->
-  
-          <div class="d-flex align-items-center ms-5 me-3">
-              <img src="/images/icone-adresse.png" alt="Icône adresse" class="me-2" width="auto" height="45" />
-              <h6 class="text-white m-0 fs-6">
-                  <span class="text-warning fw-bold">ADRESSE :</span><br />
-                  <span class="fs-6">AVENUE CHARLES DE GAULLE<br />75000 PARIS</span>
-              </h6>
-          </div>
-  
-          <div class="d-flex align-items-center ms-5 me-3"> 
-              <img src="/images/icon-telephone.png" alt="Icône téléphone" class="me-2" width="auto" height="45" />
-              <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
-                  <span class="text-warning fw-bold">TÉLÉPHONE :</span><br />
-                  <span class="fs-5 fw-bold">01 23 45 67 89</span>
-              </h6>
-          </div>
-  
-          <div class="d-flex align-items-center ms-5 me-3"> 
-              <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
-                  <span class="text-warning fw-bold">OUVERTURE :</span> Du Lundi au Samedi<br />
-                  <span class="text-warning fw-bold">HORAIRES :</span> De 9h à 17h
-              </h6>
-          </div>
-  
-          <div class="social-media d-flex me-3"> 
-              <img class="me-2" src="/images/icons8-facebook-48.png" alt="Logo Facebook" />
-              <img src="/images/twitterWhiteIcon1.png" alt="Logo Twitter" />
-          </div>
-  
-          
-          <div class="d-lg-none">
-              <svg
-                  class="menuBurger"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  stroke="#6c98e1"
-                  height="40px"
-                  width="40px"
-              >
-                  <path
-                      d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z"
-                      fill="#6c98e1"
-                  ></path>
-              </svg>
-          </div>
+      <header
+        class="headerContainer container-fluid bg-dark py-5 m-0 d-flex align-items-center"
+      >
+        <div class="col-1"></div>
+
+        <!-- Titre CLUB AUTO (Visible sur grands écrans) -->
+        <h1
+          class="text-white epaisseurDeTexte display-5 ms-md-5 d-none d-lg-block"
+        >
+          CLUB AUTO
+        </h1>
+
+        <!-- Adresse (Visible uniquement sur grands écrans) -->
+        <div class="d-none d-md-flex align-items-center ms-5 me-md-3">
+          <img
+            src="/images/icone-adresse.png"
+            alt="Icône adresse"
+            class="me-2"
+            width="auto"
+            height="45"
+          />
+          <h6 class="text-white m-0 fs-6">
+            <span class="text-warning fw-bold">ADRESSE :</span><br />
+            <span class="fs-6">AVENUE CHARLES DE GAULLE<br />75000 PARIS</span>
+          </h6>
+        </div>
+
+        <!-- Téléphone (Visible sur tous les écrans) -->
+        <div class="phone d-flex align-items-center ms-md-5 me-md-3">
+          <img
+            src="/images/icon-telephone.png"
+            alt="Icône téléphone"
+            class="me-2"
+            width="auto"
+            height="45"
+          />
+          <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
+            <span class="text-warning fw-bold">TÉLÉPHONE :</span><br />
+            <span class="number fs-5 fw-bold">01 23 45 67 89</span>
+          </h6>
+        </div>
+
+        <!-- Horaires (Visible uniquement sur grands écrans) -->
+        <div class="d-none d-md-flex align-items-center ms-md-5 me-md-3">
+          <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
+            <span class="text-warning fw-bold">OUVERTURE :</span> Du Lundi au
+            Samedi<br />
+            <span class="text-warning fw-bold">HORAIRES :</span> De 9h à 17h
+          </h6>
+        </div>
+
+        <!-- Réseaux sociaux (Visible uniquement sur grands écrans) -->
+        <div class="d-none d-md-flex social-media d-flex me-3">
+          <img
+            class="me-2"
+            src="/images/icons8-facebook-48.png"
+            alt="Logo Facebook"
+          />
+          <img src="/images/twitterWhiteIcon1.png" alt="Logo Twitter" />
+        </div>
+
+        <!-- Menu burger (Visible uniquement sur petits écrans) -->
+        <div class="d-md-none ms-auto">
+          <svg
+            class="menuBurger"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#6c98e1"
+            height="40px"
+            width="40px"
+          >
+            <path
+              d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z"
+              fill="#6c98e1"
+            ></path>
+          </svg>
+        </div>
       </header>
-  </div>
-    
-  <nav class="navbar navbar-expand-lg" style="background-color: rgba(236, 239, 243, 0.7); height: 3.5rem;">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 7rem;">
-        <ul class="navbar-nav align-items-center epaisseurDeTexte montserrat fs-6">
-          <li class="nav-item">
-            <a class="nav-link active bg-warning text-white d-flex align-items-center px-4" href="#" style="height: 100%; padding-top: 1rem; padding-bottom: 1rem;">ACCUEIL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark px-4 py-2 " href="#">VENTE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark px-4 py-2" href="#">LOCATION</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark px-4 py-2" href="/html/contact.html">CONTACT</a>
-          </li>
-        </ul>
+    </div>
+
+    <!-- Navbar (Visible uniquement sur grands écrans) -->
+    <nav
+      class="navbar navbar-expand-lg d-none d-md-flex"
+      style="background-color: rgba(236, 239, 243, 0.7); height: 3.5rem;"
+    >
+      <div class="container-fluid">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+          style="margin-right: 7rem;"
+        >
+          <ul
+            class="navbar-nav align-items-center epaisseurDeTexte montserrat fs-6"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active bg-warning text-white d-flex align-items-center px-4"
+                href="#"
+                style="height: 100%; padding-top: 1rem; padding-bottom: 1rem;"
+                >ACCUEIL</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-4 py-2" href="#">VENTE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-4 py-2" href="#">LOCATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-4 py-2" href="/html/contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Image (Visible uniquement sur grands écrans) -->
+    <div class="container-fluid p-0">
+      <div
+        id="photoAccueil"
+        class="d-none d-md-block"
+        style="margin-top: -3.5rem;"
+      >
+        <img
+          src="/images/vehicule1.jpg"
+          alt="une rangée de 8 voitures"
+          class="img-fluid w-100"
+        />
+      </div>
+
+      <!-- Texte "CLUB AUTO, LE MEILLEUR DE L'AUTOMOBILE" (Visible sur tous les écrans) -->
+      <div
+        class="sloganContainer bg-dark text-white py-4 d-flex align-items-center"
+        style="height: 8rem; width: 100%;"
+      >
+        <h2
+          class="slogan w-100 text-center text-md-start text-start epaisseurDeTexte display-6"
+          style="margin-left: 11%;"
+        >
+          CLUB AUTO<span class="text-warning">
+            LE MEILLEUR DE L'AUTOMOBILE</span
+          >
+        </h2>
       </div>
     </div>
-  </nav>
-  <div class="container-fluid p-0">
-    <div id="photoAccueil" style="margin-top: -3.5rem;">
-      <img
-        src="/images/vehicule1.jpg"
-        alt="une rangée de 8 voitures"
-        class="img-fluid w-100"
-      />
-    </div>
-    
-    <div class="bg-dark text-white py-4  d-flex align-items-center" style="height: 8rem;  padding-left: 10rem; width: 100%;">
-      <h2 class=" p-0 m-0 ps-5 epaisseurDeTexte display-5">
-        CLUB AUTO<span class="text-warning"> LE MEILLEUR DE L'AUTOMOBILE</span>
-      </h2>
-    </div>
-  </div>
-  
+    <style>
+      @media (max-width: 1400px) {
+        .col-1 {
+          display: none !important;
+        }
+      }
+      @media (max-width: 1050px) {
+        .d-lg-block,
+        #photoAccueil,
+        .social-media,
+        .d-md-flex {
+          display: none !important;
+        }
+
+        .headerContainer {
+          padding-top: 6.5rem !important;
+        }
+
+        .slogan {
+          font-size: 2.8rem;
+          text-align: left !important;
+          margin-bottom: 5%;
+          margin-top: -2%;
+        }
+
+        .sloganContainer {
+          height: auto !important;
+          padding-right: 17%;
+          text-align: start;
+        }
+        .container-fluid {
+          margin-left: 0;
+          padding-left: 0;
+        }
+        .phone {
+          justify-content: flex-start;
+          padding-left: 0rem;
+          margin-left: 0;
+        }
+
+        .number {
+          font-size: 1.7rem !important;
+        }
+        .menuBurger {
+          margin-top: -8.5rem;
+        }
+      }
+    </style>
+
     <section class="container my-5">
       <div class="row">
         <div class="col-md-6">
@@ -106,41 +215,62 @@
               alt="Clients heureux devant une voiture"
               class="img-fluid mb-3 mt-3"
             />
-            <h2 class="border-bottom pb-5 pt-4 epaisseurDeTexte mb-5">LE MEILLEUR DE L'AUTOMOBILE</h2>
+            <h2 class="border-bottom pb-5 pt-4 epaisseurDeTexte mb-5">
+              LE MEILLEUR DE L'AUTOMOBILE
+            </h2>
             <p class="text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit
-              et minima reprehenderit fugiat iste, suscipit sed sapiente iure
-              corrupti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit eveniet accusantium repellat quia labore
-              iusto maiores deleniti,  Veniam
-              eligendi beatae doloremque magni facere.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              velit et minima reprehenderit fugiat iste, suscipit sed sapiente
+              iure corrupti? Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci fugit eveniet accusantium repellat quia labore iusto
+              maiores deleniti, Veniam eligendi beatae doloremque magni facere.
             </p>
             <ul class="list-unstyled pt-4">
-              <li class="mb-3 epaisseurDeTexte text-secondary"><span class="text-warning me-3">✔</span>Lorem ipsum dolor sit amet</li>
-              <li class="mb-3 epaisseurDeTexte text-secondary"><span class="text-warning me-3">✔</span>Lorem ipsum dolor sit amet</li>
-              <li class="mb-3 epaisseurDeTexte text-secondary"><span class="text-warning me-3">✔</span>Lorem ipsum dolor sit amet</li>
-              <li class="mb-3 epaisseurDeTexte text-secondary"><span class="text-warning me-3">✔</span>Lorem ipsum dolor sit amet</li>
-              <li class="mb-3 epaisseurDeTexte text-secondary"><span class="text-warning me-3">✔</span>Lorem ipsum dolor sit amet</li>
+              <li class="mb-3 epaisseurDeTexte text-secondary">
+                <span class="text-warning me-3">✔</span>Lorem ipsum dolor sit
+                amet
+              </li>
+              <li class="mb-3 epaisseurDeTexte text-secondary">
+                <span class="text-warning me-3">✔</span>Lorem ipsum dolor sit
+                amet
+              </li>
+              <li class="mb-3 epaisseurDeTexte text-secondary">
+                <span class="text-warning me-3">✔</span>Lorem ipsum dolor sit
+                amet
+              </li>
+              <li class="mb-3 epaisseurDeTexte text-secondary">
+                <span class="text-warning me-3">✔</span>Lorem ipsum dolor sit
+                amet
+              </li>
+              <li class="mb-3 epaisseurDeTexte text-secondary">
+                <span class="text-warning me-3">✔</span>Lorem ipsum dolor sit
+                amet
+              </li>
             </ul>
           </article>
         </div>
-    
+
         <div class="col-md-6">
           <article class="mt-3">
-            <h2 class="epaisseurDeTexte mb-3">BIENVENUE CHEZ <span class="text-warning">CLUB AUTO</span></h2>
+            <h2 class="epaisseurDeTexte mb-3">
+              BIENVENUE CHEZ <span class="text-warning">CLUB AUTO</span>
+            </h2>
             <p class="epaisseurDeTexte mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              eligendi beatae doloremque magni facere, consequuntur explicabo alias
-              sit animi.
+              eligendi beatae doloremque magni facere, consequuntur explicabo
+              alias sit animi.
             </p>
             <p class="pb-5 mb-5">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              eligendi beatae doloremque magni facere, consequuntur explicabo alias
-              sit animi. Nihil
-              voluptas magnam fugit. Numquam veritatis repellat autem modi est ut at
-              hic, dolores, odio explicabo voluptatibus beatae assumenda natus
-              impedit doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              eligendi beatae doloremque magni facere, consequuntur explicabo alias
-              sit animi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Veniam eligendi
+              beatae doloremque magni facere, consequuntur explicabo alias sit
+              animi. Nihil voluptas magnam fugit. Numquam veritatis repellat
+              autem modi est ut at hic, dolores, odio explicabo voluptatibus
+              beatae assumenda natus impedit doloremque.Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Veniam eligendi beatae
+              doloremque magni facere, consequuntur explicabo alias sit animi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <img
               src="/images/entretien.jpg"
@@ -156,324 +286,549 @@
         src="/images/imageManquante.jpg"
         alt="Plusieurs véhicules côte à côte"
         class="img-fluid"
-        style="width: 100%; height: 100vh; object-fit: cover; min-height: 500px;"
-
+        style="
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+          min-height: 500px;
+        "
       />
-    
-      <div class="row position-absolute top-50 start-50 translate-middle w-100 px-5 g-3 justify-content-center" style="gap: 40px;">
-        
-        <div class="col-lg-5 col-md-6 col-sm-12 text-white py-5" style="background-color: rgba(250, 182, 55, 0.9); max-width: 700px;">
+
+      <div
+        class="row position-absolute top-50 start-50 translate-middle w-100 px-5 g-3 justify-content-center"
+        style="gap: 40px;"
+      >
+        <div
+          class="col-lg-5 col-md-6 col-sm-12 text-white py-5"
+          style="background-color: rgba(250, 182, 55, 0.9); max-width: 700px;"
+        >
           <div class="m-3">
-            <h2 class="text-dark display-6 epaisseurDeTexte m-3">Vous souhaitez louer ?</h2>
+            <h2 class="text-dark display-6 epaisseurDeTexte m-3">
+              Vous souhaitez louer ?
+            </h2>
             <p class="m-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at esse
-              quaerat atque nisi ullam possimus doloremque corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, illum asperiores! Doloribus dolorem nobis aspernatur quam alias eos.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at
+              esse quaerat atque nisi ullam possimus doloremque corporis. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
+              illum asperiores! Doloribus dolorem nobis aspernatur quam alias
+              eos.
             </p>
           </div>
         </div>
-        <div class="col-lg-5 col-md-6 col-sm-12 text-white py-5" style="background-color: rgba(255, 72, 72, 0.9); max-width: 700px;">
+        <div
+          class="col-lg-5 col-md-6 col-sm-12 text-white py-5"
+          style="background-color: rgba(255, 72, 72, 0.9); max-width: 700px;"
+        >
           <div class="m-3">
-            <h2 class="text-dark display-6 epaisseurDeTexte m-3">Vous souhaitez acheter ?</h2>
+            <h2 class="text-dark display-6 epaisseurDeTexte m-3">
+              Vous souhaitez acheter ?
+            </h2>
             <p class="m-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at esse
-              quaerat atque nisi ullam possimus doloremque corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, illum asperiores! Doloribus dolorem nobis aspernatur quam alias eos.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at
+              esse quaerat atque nisi ullam possimus doloremque corporis. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
+              illum asperiores! Doloribus dolorem nobis aspernatur quam alias
+              eos.
             </p>
           </div>
         </div>
       </div>
     </section>
-   
+
     <section class="container-fluid bg-dark py-5 text-center text-white">
-      <h2 class="text-center border-bottom border-3 border-warning mb-5 pb-4 epaisseurDeTexte display-5" style="max-width: 75%; margin: auto;">
+      <h2
+        class="text-center border-bottom border-3 border-warning mb-5 pb-4 epaisseurDeTexte display-5"
+        style="max-width: 75%; margin: auto;"
+      >
         VEHICULES RECENTS
       </h2>
-    
+
       <div class="row justify-content-center">
-       
         <div class="col-md-3 mb-4 card-column">
           <div class="card bg-dark text-white epaisseurDeTexte montserrat">
-            <img src="/images/vehicule2.jpg" class="card-img-top rounded-0 mb-3" alt="Photo d'un véhicule récent en vente" />
-            <div class="card-body d-flex justify-content-between align-items-center bg-gray">
-              <h5 class="card-title mt-3 ms-3 me-5 text-start epaisseurDeTexte">BMW 535I, NAVI,&nbsp;LEATHER, ABS</h5>
-              <div class="btn rounded-0 bg-blue text-white p-3 me-3 mt-3 epaisseurDeTexte fs-5" style="width: 28%;">5&nbsp;500&nbsp;€</div>
+            <img
+              src="/images/vehicule2.jpg"
+              class="card-img-top rounded-0 mb-3"
+              alt="Photo d'un véhicule récent en vente"
+            />
+            <div
+              class="card-body d-flex justify-content-between align-items-center bg-gray"
+            >
+              <h5 class="card-title mt-3 ms-3 me-5 text-start epaisseurDeTexte">
+                BMW 535I, NAVI,&nbsp;LEATHER, ABS
+              </h5>
+              <div
+                class="btn rounded-0 bg-blue text-white p-3 me-3 mt-3 epaisseurDeTexte fs-5"
+                style="width: 28%;"
+              >
+                5&nbsp;500&nbsp;€
+              </div>
             </div>
             <div class="bg-gray">
-              <hr style="border: 1px solid #626668; width: 90%; margin: 10px auto 25px;">
+              <hr
+                style="
+                  border: 1px solid #626668;
+                  width: 90%;
+                  margin: 10px auto 25px;
+                "
+              />
             </div>
           </div>
         </div>
-    
+
         <div class="col-md-3 mb-4 d-none d-lg-block card-column">
           <div class="card bg-dark text-white epaisseurDeTexte montserrat">
-            <img src="/images/vehicule2.jpg" class="card-img-top rounded-0 mb-3" alt="Photo d'un véhicule récent en vente" />
-            <div class="card-body d-flex justify-content-between align-items-center bg-gray">
-              <h5 class="card-title mt-2 ms-2 me-4 text-start epaisseurDeTexte">BMW 328I,&nbsp;SPORT LINE BODY KIT</h5>
-              <div class="btn rounded-0 bg-blue text-white p-3 me-3 mt-3 epaisseurDeTexte fs-5" style="width: 35%;">8&nbsp;000&nbsp;€</div>
+            <img
+              src="/images/vehicule2.jpg"
+              class="card-img-top rounded-0 mb-3"
+              alt="Photo d'un véhicule récent en vente"
+            />
+            <div
+              class="card-body d-flex justify-content-between align-items-center bg-gray"
+            >
+              <h5 class="card-title mt-2 ms-2 me-4 text-start epaisseurDeTexte">
+                BMW 328I,&nbsp;SPORT LINE BODY KIT
+              </h5>
+              <div
+                class="btn rounded-0 bg-blue text-white p-3 me-3 mt-3 epaisseurDeTexte fs-5"
+                style="width: 35%;"
+              >
+                8&nbsp;000&nbsp;€
+              </div>
             </div>
             <div class="bg-gray">
-              <hr style="border: 1px solid #626668; width: 90%; margin: 10px auto 25px;">
+              <hr
+                style="
+                  border: 1px solid #626668;
+                  width: 90%;
+                  margin: 10px auto 25px;
+                "
+              />
             </div>
           </div>
         </div>
-    
+
         <div class="col-md-3 mb-4 d-none d-lg-block card-column">
           <div class="card bg-dark text-white epaisseurDeTexte montserrat">
-            <img src="/images/vehicule2.jpg" class="card-img-top rounded-0 mb-3" alt="Photo d'un véhicule récent en vente" />
-            <div class="card-body d-flex justify-content-between align-items-center bg-gray">
-              <h5 class="card-title mt-3 ms-3 me-5 text-start epaisseurDeTexte">FORD EXPLORER 2015 4WD</h5>
-              <div class="btn rounded-0 bg-blue text-white p-0 me-2 mt-3 fs-5" style="width: 30%;">
-                <span class="text-decoration-line-through text-dark fs-6">9&nbsp;000&nbsp;€</span>
+            <img
+              src="/images/vehicule2.jpg"
+              class="card-img-top rounded-0 mb-3"
+              alt="Photo d'un véhicule récent en vente"
+            />
+            <div
+              class="card-body d-flex justify-content-between align-items-center bg-gray"
+            >
+              <h5 class="card-title mt-3 ms-3 me-5 text-start epaisseurDeTexte">
+                FORD EXPLORER 2015 4WD
+              </h5>
+              <div
+                class="btn rounded-0 bg-blue text-white p-0 me-2 mt-3 fs-5"
+                style="width: 30%;"
+              >
+                <span class="text-decoration-line-through text-dark fs-6"
+                  >9&nbsp;000&nbsp;€</span
+                >
                 <span class="epaisseurDeTexte"> 8&nbsp;200&nbsp;€</span>
               </div>
             </div>
             <div class="bg-gray">
-              <hr style="border: 1px solid #626668; width: 90%; margin: 10px auto 25px;">
+              <hr
+                style="
+                  border: 1px solid #626668;
+                  width: 90%;
+                  margin: 10px auto 25px;
+                "
+              />
             </div>
           </div>
         </div>
       </div>
-    <style>
-      @media (max-width: 1430px) {
-        .card-column {
-          flex: 0 0 100%;
-          max-width: 100%;
+      <style>
+        @media (max-width: 1430px) {
+          .card-column {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
         }
-      }
-      @media (max-width: 992px) {
-        .d-lg-block {
-          display: none !important;
+        @media (max-width: 992px) {
+          .d-lg-block {
+            display: none !important;
+          }
         }
-      }
-    </style>
-     </section>
+      </style>
+    </section>
 
-     <section class="container-fluid bg-light">
+    <section class="container-fluid bg-light">
       <div class="pt-5"></div>
-      <h2 class="text-center epaisseurDeTexte display-6 mb-5 pb-5">Pourquoi nous choisir ?</h2>
-  <div class="container">
+      <h2 class="text-center epaisseurDeTexte display-6 mb-5 pb-5">
+        Pourquoi nous choisir ?
+      </h2>
+      <div class="container">
         <div class="row g-3 justify-content-center">
-          <div class="col-md-3 d-flex align-items-start flex-md-row text-center text-md-start">
-            <img src="/images/icon1-.png" alt="Icone financement" class="img-fluid me-3" style="width: 75px; height: auto;" />
+          <div
+            class="col-md-3 d-flex align-items-start flex-md-row text-center text-md-start"
+          >
+            <img
+              src="/images/icon1-.png"
+              alt="Icone financement"
+              class="img-fluid me-3"
+              style="width: 75px; height: auto;"
+            />
             <div class="text-container">
               <h6 class="epaisseurDeTexte">FINANCEMENT</h6>
-              <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div class="col-md-3 d-flex align-items-start flex-md-row text-center text-md-start">
-            <img src="/images/icon2-.png" alt="Icone réactivité" class="img-fluid me-3" style="width: 75px; height: auto;" />
+          <div
+            class="col-md-3 d-flex align-items-start flex-md-row text-center text-md-start"
+          >
+            <img
+              src="/images/icon2-.png"
+              alt="Icone réactivité"
+              class="img-fluid me-3"
+              style="width: 75px; height: auto;"
+            />
             <div class="text-container">
               <h6 class="epaisseurDeTexte">RÉACTIVITÉ DE L'ÉQUIPE TECHNIQUE</h6>
-              <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div class="col-md-3 d-flex align-items-start flex-md-row text-center text-md-start">
-            <img src="/images/icon3-.png" alt="Icone écoute" class="img-fluid me-3" style="width: 75px; height: auto;" />
+          <div
+            class="col-md-3 d-flex align-items-start flex-md-row text-center text-md-start"
+          >
+            <img
+              src="/images/icon3-.png"
+              alt="Icone écoute"
+              class="img-fluid me-3"
+              style="width: 75px; height: auto;"
+            />
             <div class="text-container">
               <h6 class="epaisseurDeTexte">A L'ÉCOUTE DE NOTRE CLIENTÈLE</h6>
-              <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div class="col-md-3 d-flex align-items-start flex-md-row text-center text-md-start">
-            <img src="/images/icon4-.png" alt="Icone service" class="img-fluid me-3" style="width: 75px; height: auto;" />
+          <div
+            class="col-md-3 d-flex align-items-start flex-md-row text-center text-md-start"
+          >
+            <img
+              src="/images/icon4-.png"
+              alt="Icone service"
+              class="img-fluid me-3"
+              style="width: 75px; height: auto;"
+            />
             <div class="text-container">
               <h6 class="epaisseurDeTexte">SERVICE & MAINTENANCE</h6>
-              <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="text-center pt-5 mt-5 pb-5"> 
-        <button class="btn btn-secondary justify-content-center montserrat epaisseurDeTexte p-3 ps-5 pe-5 border-0 mb-5">CONTACTEZ NOUS</button>
+      <div class="text-center pt-5 mt-5 pb-5">
+        <button
+          class="btn btn-secondary justify-content-center montserrat epaisseurDeTexte p-3 ps-5 pe-5 border-0 mb-5"
+        >
+          CONTACTEZ NOUS
+        </button>
       </div>
 
-    <style>
-      @media (max-width: 1000px) {
-        .col-md-3 {
-      display: flex;
-      flex-direction: row ;
-      align-items: flex-start;
-      justify-content: center;
-      text-align: left;
-    }
-        .text-container {
-          max-width: 250px;
-          margin-top: 10px;
+      <style>
+        @media (max-width: 1000px) {
+          .col-md-3 {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: left;
+          }
+          .text-container {
+            max-width: 250px;
+            margin-top: 10px;
+          }
+          .container {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
         }
-        .container {
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
-    </style>
+      </style>
     </section>
-    
-    <section class="container-fluid p-0 position-relative" style="height: 70vh; min-height: 700px;">
-      <img src="/images/vehicule3.jpg" alt="photo d'un véhicule" class="img-fluid w-100 h-100" style="object-fit: cover;"/>
-      <div class="d-flex align-items-center position-absolute w-100 h-100" style="top: 0; left: 0;">
-        <div class="container">
-            <div class=" col-md-7 col-12 text-dark py-5" style="background-color: rgba(250, 182, 55, 0.8);">
-              <div class="text-center ms-5 ps-3">
-                <h3 class="display-5 epaisseurDeTexte text-start mb-4 mt-4 ms-3 me-3 montserrat">CLUB AUTO<br>
-                  <span class="display-5 epaisseurDeTexte text-white">VENTE ET LOCATION</span>
-                </h3>
-                <p class="text-start fs-5 pe-5 ms-3 me-5 mb-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, alias, repellat voluptatibus nobis praesentium perferendis beatae magni earum ducimus soluta modi dicta optio magnam iste quos voluptatum blanditiis delectus.
-                </p>
-              </div>
+
+    <section
+      class="container-fluid p-0 position-relative"
+      style="height: 70vh; min-height: 700px;"
+    >
+      <img
+        src="/images/vehicule3.jpg"
+        alt="photo d'un véhicule"
+        class="img-fluid w-100 h-100"
+        style="object-fit: cover;"
+      />
+      <div
+        class="d-flex align-items-center justify-content-start position-absolute w-100 h-100"
+        style="top: 0; left: 0;"
+      >
+        <div class="container col-8 offset-md-0">
+          <div
+            class="offset-md-2 col-md-7 text-dark py-5"
+            style="background-color: rgba(250, 182, 55, 0.8);"
+          >
+            <div class="text-center ms-5 ps-3">
+              <h3
+                class="display-5 epaisseurDeTexte text-start mb-4 mt-5 ms-3 me-5 montserrat"
+              >
+                CLUB AUTO<br />
+                <span class="display-5 epaisseurDeTexte text-white"
+                  >VENTE ET LOCATION</span
+                >
+              </h3>
+              <p class="text-start fs-5 pe-5 ms-3 me-5 mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, alias, repellat voluptatibus nobis praesentium
+                perferendis beatae magni earum ducimus soluta modi dicta optio
+                magnam iste quos voluptatum blanditiis.
+              </p>
             </div>
+          </div>
         </div>
       </div>
+      <style>
+        @media (max-width: 1110px) {
+          .container {
+            width: 100%;
+          }
+        }
+      </style>
     </section>
-    
+
     <section class="container-fluid bg-dark text-light py-5">
-      <div class="row">
-        <div class="col-md-3">
-          <h4 class="text-blue">CLUB AUTO</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nostrum beatae vel laudantium tempore.
+      <div
+        class="containerMedia d-flex flex-column flex-lg-row justify-content-center col-7 mt-4"
+      >
+        <!-- CLUB AUTO -->
+        <div class="col-lg-4 col-lg-4 offset-lg-10 col-12 mb-5">
+          <h6 class="epaisseurDeTexte mb-4">
+            <span class="text-blue">CLUB </span>AUTO
+          </h6>
+          <p class="text-grayLight text-start me-md-5 fs-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            nostrum beatae vel laudantium tempore. Quae odit eius iste sed
+            veritatis totam.
           </p>
         </div>
-        <div class="col-md-3">
-          <h4>HORAIRE D'OUVERTURE</h4>
-          <p>Lundi - Samedi : <span class="text-muted">09:00 - 17:00</span></p>
-          <p>Dimanche et jours fériés : <span class="text-muted">Fermé</span></p>
-        </div>
-        <div class="col-md-3">
-          <h4>NEWSLETTER</h4>
-          <form class="d-flex flex-column">
-            <input type="email" class="form-control mb-2" placeholder="Entrez votre email" />
-            <button type="submit" class="btn btn-warning">S'inscrire</button>
-          </form>
-          <p class="mt-3">Inscrivez-vous pour recevoir les dernières offres</p>
-        </div>
-        <div class="col-md-3">
-          <h4>RESEAUX SOCIAUX</h4><div class="d-flex gap-2">
-            <!-- Facebook Icon -->
-            <svg class="logoReseauxFacebook" 
-            viewBox="0 0 455 455" 
-            height="60px" 
-            width="60px" 
-            xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="#ffffff" />
-              <path d="M0,0v455h455V0H0z M301.004,125.217H265.44c-7.044,0-14.153,7.28-14.153,12.696v36.264h49.647c-1.999,27.807-6.103,53.235-6.103,53.235h-43.798V385h-65.266V227.395h-31.771v-53.029h31.771v-43.356c0-7.928-1.606-61.009,66.872-61.009h48.366V125.217z" fill="#3a3d3f" />
-            </svg>
-          
-            <!-- Twitter Icon -->
-            <svg
-                  class="logoReseauxTwitter"
-                  viewBox="0 0 16 16"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  fill="#3a3d3f"
-                  height="60px"
-                  width="60px"
-                >
-                  <rect width="100%" height="100%" fill="#ffffff" />
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path
-                      fill="#3a3d3f"
-                      d="M0 0v16h16v-16h-16zM12.8 5.6c0 0.1 0 0.2 0 0.3 0 3.3-2.5 7-7 7-1.4 0-2.7-0.4-3.8-1.1 0.2 0 0.4 0 0.6 0 1.2 0 2.2-0.4 3.1-1.1-1.1 0-2-0.7-2.3-1.7 0.2 0 0.3 0 0.5 0s0.4 0 0.6-0.1c-1.1-0.2-2-1.2-2-2.4 0 0 0 0 0 0 0.3 0.2 0.7 0.3 1.1 0.3-0.7-0.4-1.1-1.2-1.1-2 0-0.5 0.1-0.9 0.3-1.2 1.2 1.5 3.1 2.4 5.1 2.5 0-0.2-0.1-0.4-0.1-0.6 0-1.4 1.1-2.5 2.5-2.5 0.7 0 1.3 0.3 1.8 0.8 0.6-0.1 1.1-0.3 1.6-0.6-0.2 0.6-0.6 1.1-1.1 1.4 0.5-0.1 1-0.2 1.4-0.4-0.3 0.6-0.7 1-1.2 1.4z"
-                    ></path>
-                  </g>
-                </svg>
-                <svg
-                  class="logoReseauxInsta"
-                  fill="#ffffff"
-                  height="60px"
-                  width="60px"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon"
-                >
-                  <rect width="100%" height="100%" fill="#3a3d3f" />
 
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path
-                      d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"
-                    ></path>
-                  </g>
-                </svg>
+        <!-- HORAIRE D'OUVERTURE -->
+        <div class="col-lg-4 col-lg-4 col-12 mb-5">
+          <h6 class="epaisseurDeTexte mb-4">HORAIRE D'OUVERTURE</h6>
+          <p class="text-grayLight epaisseurDeTexte mb-1">
+            Lundi - Samedi :
+            <span class="text-white fw-normal">09:00 - 17:00</span>
+          </p>
+          <p class="text-grayLight epaisseurDeTexte">
+            Dimanche et jours fériés :
+            <span class="text-white fw-normal">Fermé</span>
+          </p>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="col-lg-4 col-md-4 col-12 me-md-5 mb-md-5">
+          <h6 class="epaisseurDeTexte mb-4">NEWSLETTER</h6>
+          <form class="d-flex">
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control rounded-0"
+                placeholder="Entrez votre email"
+                style="height: 45px;"
+              />
+              <button
+                type="submit"
+                class="btn btn-outline-0 p-0"
+                style="padding: 0;"
+              >
                 <svg
-                  class="logoReseauxGoogle"
-                  fill="#3a3d3f"
-                  height="60px"
-                  width="60px"
+                  class="btn-outline"
+                  height="45px"
+                  width="45px"
                   version="1.1"
                   id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 455 455"
+                  viewBox="0 0 512 512"
                   xml:space="preserve"
+                  fill="#ffffff"
+                  stroke="#ffffff"
+                  style="margin-top: -1px; vertical-align: middle;"
                 >
-                  <rect width="100%" height="100%" fill="#ffffff" />
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <rect width="350%" height="350%" fill="#cc6119" />
                   <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path
-                      style="fill-rule: evenodd; clip-rule: evenodd;"
-                      d="M0,0v455h455V0H0z M161.682,342.682C97.509,342.682,46.5,291.672,46.5,227.5 s51.009-115.182,115.182-115.182c31.264,0,57.591,11.518,77.336,31.264L207.754,173.2c-8.227-8.227-23.036-18.1-46.073-18.1 c-39.49,0-70.754,32.909-70.754,72.4s31.264,72.4,70.754,72.4c46.073,0,62.527-32.909,65.818-49.364h-65.818v-39.491h108.6 c1.646,6.582,1.646,11.518,1.646,19.746C271.928,296.609,227.5,342.682,161.682,342.682z M408.5,243.955h-32.909v32.909h-32.91 v-32.909h-32.909v-32.909h32.909v-32.909h32.91v32.909H408.5V243.955z"
-                    ></path>
-                  </g>
-                </svg>
-                <svg
-                  class="logoReseauxYoutube"
-                  fill="#3a3d3f"
-                  height="60px"
-                  width="60px"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 455 455"
-                  xml:space="preserve"
-                >
-                  <rect width="100%" height="100%" fill="#ffffff" />
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
+                    id="SVGRepo_iconCarrier"
+                    transform="scale(0.4) translate(400, 400)"
+                  >
                     <g>
                       <path
-                        style="fill-rule: evenodd; clip-rule: evenodd;"
-                        d="M0,0v455h455V0H0z M379.493,301.961 c-3.861,16.75-17.563,29.118-34.057,30.96c-39.044,4.353-78.575,4.382-117.952,4.353c-39.361,0.029-78.892,0-117.948-4.353 c-16.498-1.841-30.199-14.21-34.04-30.96C70,278.114,70,252.061,70,227.499c0-24.562,0.065-50.603,5.556-74.45 c3.841-16.766,17.547-29.118,34.024-30.959c39.06-4.365,78.608-4.382,117.969-4.365c39.357-0.016,78.892,0,117.948,4.365 c16.498,1.841,30.199,14.193,34.057,30.959c5.495,23.847,5.446,49.888,5.446,74.45C385,252.061,384.984,278.114,379.493,301.961z"
+                        style="fill: #ffffff;"
+                        d="M69.818,512C31.32,512,0,480.68,0,442.182s31.32-69.818,69.818-69.818s69.818,31.32,69.818,69.818S108.316,512,69.818,512z"
                       ></path>
                       <path
-                        style="fill-rule: evenodd; clip-rule: evenodd;"
-                        d="M186.855,276.399c33.467-17.355,66.638-34.565,100.138-51.932 c-33.597-17.53-66.764-34.821-100.138-52.237V276.399z"
+                        style="fill: #ffffff;"
+                        d="M290.909,477.091c-19.279,0-34.909-15.63-34.909-34.909C256,339.521,172.48,256,69.818,256c-19.279,0-34.909-15.63-34.909-34.909s15.63-34.909,34.909-34.909c68.381,0,132.667,26.629,181.019,74.981c48.353,48.351,74.981,112.639,74.981,181.019C325.818,461.461,310.188,477.091,290.909,477.091z"
+                      ></path>
+                      <path
+                        style="fill: #ffffff;"
+                        d="M477.091,477.091c-19.279,0-34.909-15.63-34.909-34.909c0-205.322-167.042-372.364-372.364-372.364c-19.279,0-34.909-15.63-34.909-34.909S50.539,0,69.818,0c59.678,0,117.591,11.696,172.127,34.764c52.659,22.273,99.945,54.151,140.542,94.749c40.599,40.598,72.476,87.882,94.749,140.542C500.303,324.591,512,382.502,512,442.182C512,461.461,496.37,477.091,477.091,477.091z"
                       ></path>
                     </g>
                   </g>
                 </svg>
-          
+              </button>
+            </div>
+          </form>
+          <p class="mt-2 text-secondary me-4 fs-5">
+            Inscrivez-vous pour recevoir les dernières offres
+          </p>
+        </div>
+
+        <!-- RESEAUX SOCIAUX -->
+        <div class="col-lg-5 col-lg-4 col-12 mb-5">
+          <h6 class="epaisseurDeTexte mb-4">RESEAUX SOCIAUX</h6>
+          <div class="d-flex gap-3">
+            <!-- Facebook Icon -->
+            <svg
+              class="logoReseauxFacebook"
+              viewBox="0 0 455 455"
+              height="50px"
+              width="50px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="100%" height="100%" fill="#ffffff" />
+              <path
+                d="M0,0v455h455V0H0z M301.004,125.217H265.44c-7.044,0-14.153,7.28-14.153,12.696v36.264h49.647c-1.999,27.807-6.103,53.235-6.103,53.235h-43.798V385h-65.266V227.395h-31.771v-53.029h31.771v-43.356c0-7.928-1.606-61.009,66.872-61.009h48.366V125.217z"
+                fill="#3a3d3f"
+              />
+            </svg>
+            <!-- Twitter Icon -->
+            <svg
+              class="logoReseauxTwitter"
+              viewBox="0 0 16 16"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#3a3d3f"
+              height="50px"
+              width="50px"
+            >
+              <rect width="100%" height="100%" fill="#ffffff" />
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill="#3a3d3f"
+                  d="M0 0v16h16v-16h-16zM12.8 5.6c0 0.1 0 0.2 0 0.3 0 3.3-2.5 7-7 7-1.4 0-2.7-0.4-3.8-1.1 0.2 0 0.4 0 0.6 0 1.2 0 2.2-0.4 3.1-1.1-1.1 0-2-0.7-2.3-1.7 0.2 0 0.3 0 0.5 0s0.4 0 0.6-0.1c-1.1-0.2-2-1.2-2-2.4 0 0 0 0 0 0 0.3 0.2 0.7 0.3 1.1 0.3-0.7-0.4-1.1-1.2-1.1-2 0-0.5 0.1-0.9 0.3-1.2 1.2 1.5 3.1 2.4 5.1 2.5 0-0.2-0.1-0.4-0.1-0.6 0-1.4 1.1-2.5 2.5-2.5 0.7 0 1.3 0.3 1.8 0.8 0.6-0.1 1.1-0.3 1.6-0.6-0.2 0.6-0.6 1.1-1.1 1.4 0.5-0.1 1-0.2 1.4-0.4-0.3 0.6-0.7 1-1.2 1.4z"
+                ></path>
+              </g>
+            </svg>
+            <!-- Instagram Icon -->
+            <svg
+              class="logoReseauxInsta"
+              fill="#ffffff"
+              height="50px"
+              width="50px"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="100%" height="100%" fill="#3a3d3f" />
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"
+                ></path>
+              </g>
+            </svg>
+            <!-- Google Icon -->
+            <svg
+              class="logoReseauxGoogle"
+              fill="#3a3d3f"
+              height="50px"
+              width="50px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 455 455"
+              xml:space="preserve"
+            >
+              <rect width="100%" height="100%" fill="#ffffff" />
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  style="fill-rule: evenodd; clip-rule: evenodd;"
+                  d="M0,0v455h455V0H0z M161.682,342.682C97.509,342.682,46.5,291.672,46.5,227.5 s51.009-115.182,115.182-115.182c31.264,0,57.591,11.518,77.336,31.264L207.754,173.2c-8.227-8.227-23.036-18.1-46.073-18.1 c-39.49,0-70.754,32.909-70.754,72.4s31.264,72.4,70.754,72.4c46.073,0,62.527-32.909,65.818-49.364h-65.818v-39.491h108.6 c1.646,6.582,1.646,11.518,1.646,19.746C271.928,296.609,227.5,342.682,161.682,342.682z M408.5,243.955h-32.909v32.909h-32.91 v-32.909h-32.909v-32.909h32.909v-32.909h32.91v32.909H408.5V243.955z"
+                ></path>
+              </g>
+            </svg>
+            <!-- Youtube Icon -->
+            <svg
+              class="logoReseauxYoutube"
+              fill="#3a3d3f"
+              height="50px"
+              width="50px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 455 455"
+              xml:space="preserve"
+            >
+              <rect width="100%" height="100%" fill="#ffffff" />
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    style="fill-rule: evenodd; clip-rule: evenodd;"
+                    d="M0,0v455h455V0H0z M379.493,301.961 c-3.861,16.75-17.563,29.118-34.057,30.96c-39.044,4.353-78.575,4.382-117.952,4.353c-39.361,0.029-78.892,0-117.948-4.353 c-16.498-1.841-30.199-14.21-34.04-30.96C70,278.114,70,252.061,70,227.499c0-24.562,0.065-50.603,5.556-74.45 c3.841-16.766,17.547-29.118,34.024-30.959c39.06-4.365,78.608-4.382,117.969-4.365c39.357-0.016,78.892,0,117.948,4.365 c16.498,1.841,30.199,14.193,34.057,30.959c5.495,23.847,5.446,49.888,5.446,74.45C385,252.061,384.984,278.114,379.493,301.961z"
+                  ></path>
+                  <path
+                    style="fill-rule: evenodd; clip-rule: evenodd;"
+                    d="M186.855,276.399c33.467-17.355,66.638-34.565,100.138-51.932 c-33.597-17.53-66.764-34.821-100.138-52.237V276.399z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
       </div>
-    </section>
-    <footer class="bg-dark text-light text-center py-4">
-      <p>Copyright &copy; Club Auto - Tous droits réservés</p>
-    </footer>
-    
+      <hr style="color: #626668 1px solid; margin-left: 10%; width: 80%;" />
 
-    <!-- Bootstrap JS -->
+      <style>
+        @media (max-width: 990px) {
+          .containerMedia {
+            margin-left: 8.33333%;
+            /* width: 90%; */
+          }
+        }
+        @media (max-width: 750px) {
+          .containerMedia {
+            width: 90%;
+          }
+        }
+      </style>
+    </section>
+
+    <footer
+      class="bg-dark text-grayLight fs-6 text-center py-4 mb-5 pb-5"
+      style="margin-top: -60px;"
+    >
+      <h5 class="fs-6 openSans">
+        Copyright &copy; Club Auto - Tous droits réservés
+      </h5>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

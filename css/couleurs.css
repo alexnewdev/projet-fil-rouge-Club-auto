@@ -30,6 +30,7 @@ body {
   --bs-secondary: #6c98e1;
   --bs-light: #ffffff;
   --bs-gray: #373c3f;
+  --bs-grayLight: #aaaaaa;
 }
 
 /* Écraser les classes Bootstrap */
@@ -51,6 +52,16 @@ body {
 
 .text-light {
   color: var(--bs-light) !important;
+}
+
+.text-blue {
+  color: var(--bs-secondary) !important;
+}
+.text-gray {
+  color: var(--bs-gray) !important;
+}
+.text-grayLight {
+  color: var(--bs-grayLight) !important;
 }
 
 /* Pour les backgrounds */
