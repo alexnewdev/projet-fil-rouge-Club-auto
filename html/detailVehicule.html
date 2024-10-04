@@ -9,7 +9,7 @@
   </head>
   <body>
    
-    <div>
+    <div class="col-12">
       <header
         class="headerContainer container-fluid bg-dark py-5 m-0 d-flex d-md-flex align-items-center"
       >
@@ -21,13 +21,13 @@
         >
           CLUB&nbsp;AUTO
         </h1> 
-          <div class="d-flex d-md-none w-100 justify-content-between">
+          <div class="d-flex d-md-none w-100 justify-content-start">
         <h1
-          class="text-white epaisseurDeTexte display-custom ms-lg-2 mb-4 "
+          class="text-white epaisseurDeTexte display-custom  mb-4 "
         >
           CLUB&nbsp;AUTO
         </h1> 
-         <div class="d-md-none d-flex ms-5 mb-4">
+         <div class="d-md-none d-flex">
           <svg
             class="menuBurger"
             viewBox="0 0 24 24"
@@ -42,6 +42,11 @@
               fill="#6c98e1"
             ></path>
           </svg>
+          <style>
+            .menuBurger {
+              margin-left: 0px !important;
+            }
+          </style>
         </div>
       </div>
        
@@ -76,7 +81,7 @@
         <style>
           @media (max-width: 767px) {
             .display-custom {
-              font-size: 3.5rem;
+              font-size: 3rem;
             }
       
             .phone {

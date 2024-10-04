@@ -4,176 +4,264 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Club Auto</title>
-    <link rel="stylesheet" href="/css/clubAuto.css" />
-    <link rel="stylesheet" href="/css/contactClubAuto.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/couleurs.css" />
   </head>
-  <body class="formulaireBody">
-    <div class="containerResponsive">
-    <header id="mainHeader" class="mainHeader">
-      <div class="mainHeaderTitre"> <h1 class="accessibility">CLUB AUTO</h1></div>
-      <div class="mainHeaderBurger">
-        <svg
-          class="menuBurger"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke="#6c98e1"
+  <body style="background-color: rgba(236, 239, 243, 1);">
+   
+    <div class="fluid">
+      <header
+        class="headerContainer container-fluid  bg-dark py-5 m-0 d-flex d-md-flex align-items-center"
+      >
+      
+        <div class="col-xl-1"></div>
+        <div class="d-flex flex-column flex-lg-row">
+          <h1
+          class="text-white epaisseurDeTexte display-custom ms-2 fs-lg-4 ms-lg-5 d-none d-md-block"
         >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
+          CLUB&nbsp;AUTO
+        </h1> 
+          <div class="d-flex d-md-none w-100 justify-content-between">
+        <h1
+          class="text-white epaisseurDeTexte display-custom ms-lg-2 mb-4 "
+        >
+          CLUB&nbsp;AUTO
+        </h1> 
+         <div class="d-md-none d-flex ms-5 mb-4">
+          <svg
+            class="menuBurger"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#6c98e1"
+            height="50px"
+            width="50px"
+          >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
               d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z"
               fill="#6c98e1"
             ></path>
-          </g>
-        </svg>
+          </svg>
+        </div>
       </div>
-      <div class="ouverture-horaires">
-        <img
-          src="/images/icone-adresse.png"
-          alt="Icône adresse"
-          id="iconeAdresse"
-          class="icone"
-        />
-        <p>
-          <span class="orange">ADRESSE :</span><br />
-          <span class="plusLarge"
-            >AVENUE CHARLES DE GAULLE<br />
-            75000 PARIS</span
-          >
-        </p>
+       
+        <div class="d-none d-md-flex align-items-center ms-lg-5 me-lg-3">
+          <img
+            src="/images/icone-adresse.png"
+            alt="Icône adresse"
+            class="me-lg-2"
+            width="auto"
+            height="60"
+          />
+          <h6 class="text-white m-0 fs-6 me-lg-5">
+            <span class="text-warning fw-bold">ADRESSE :</span><br />
+            <span class="fs-6">AVENUE CHARLES DE GAULLE<br />75000 PARIS</span>
+          </h6>
+        </div>
+       
+        <div class="phone d-flex align-items-center">
+          <img
+            src="/images/icon-telephone.png"
+            alt="Icône téléphone"
+            class="me-lg-2"
+            width="auto"
+            height="60"
+          />
+          <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
+            <span class="text-warning fw-bold">TÉLÉPHONE :</span><br />
+            <span class="number fs-4 fw-bold">01 23 45 67 89</span>
+          </h6>
+        </div>
       </div>
-      <div class="contact-info">
-        <img
-          src="/images/icon-telephone.png"
-          alt="Icône téléphone"
-          id="iconeTelephone"
-          class="iconeTelephone"
-        />
-        <p>
-          <span class="orange">TÉLÉPHONE :</span><br /><span class="plusEpais1"
-            >01 23 45 67 89</span
-          >
-        </p>
-      </div>
-      <div class="ouverture-horaires">
-        <p>
-          <span class="orange">OUVERTURE :</span
-          ><span class="plusEpais2"> Du Lundi au Samedi</span><br />
-          <span class="orange">HORAIRES :</span
-          ><span class="plusEpais2"> De 9h à 17h</span>
-        </p>
-      </div>
-      <div class="social-media">
-        <img
-          class="social"
-          src="/images/icons8-facebook-48.png"
-          alt="Logo Facebook"
-        />
-        <img
-          class="social"
-          src="/images/twitterWhiteIcon1.png"
-          alt="Logo Twitter"
-        />
-      </div>
+        <style>
+          @media (max-width: 767px) {
+            .display-custom {
+              font-size: 3.5rem;
+            }
       
-    </header>
+            .phone {
+              justify-content: flex-start;
+              margin-left: 1rem;
+            }
+      
+            .phone .number {
+              font-size: 1.75rem !important;
+            }
+          }
+      
+          @media (min-width: 768px) {
+            .fs-md-4 {
+              font-size: 3rem;
+            }
+          }
+        </style>
+      
+        <div class="d-none d-md-flex align-items-center ms-lg-5 me-lg-3  ms-3">
+          <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
+            <span class="text-warning fw-bold">OUVERTURE :</span> Du Lundi au
+            Samedi<br />
+            <span class="text-warning fw-bold">HORAIRES :</span> De 9h à 17h
+          </h6>
+        </div>
 
-    <nav id="mainNav" class="mainNav">
-      <ul>
-        <li>ACCUEIL</li>
-        <li>VENTE</li>
-        <li>LOCATION</li>
-        <li class="survol">
-          <a href="/contact.html" title="Vers la page de contact de ce site"
-            >CONTACT</a
+        <div class="d-none d-xl-flex social-media d-flex me-lg-3 ms-lg-5 ms-3">
+          
+          <svg class="mt-1 me-3" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 291.319 291.319" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#3B599;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659 S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"></path> <path style="fill:#FFFFFF;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055 v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366 C154.791,104.556,158.341,100.277,163.394,100.277z"></path> </g> </g></svg>
+          
+          <svg height="60px" width="60px"  viewBox="-3.2 -3.2 38.40 38.40" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(4.48,4.48), scale(0.72)"><rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="19.2" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd"> <path d="m0 0h32v32h-32z"></path> <path d="m16 0c8.836556 0 16 7.163444 16 16s-7.163444 16-16 16-16-7.163444-16-16 7.163444-16 16-16zm2.8844392 10c-.8155312-.00039875-1.5977768.3185138-2.1744446.8864965s-.9004568 1.338447-.9000516 2.1416957c0 .2345571.0290047.4683624.0763281.693898-2.4735114-.1243416-4.777484-1.275917-6.33981273-3.1687757-.26638508.4495677-.41827803.9652925-.41827803 1.5276281-.0010649 1.0136875.51366356 1.9604572 1.37085286 2.5214884-.50376554-.0187946-.97928966-.1593785-1.3891716-.3841624v.0375893c-.00205712 1.4426342 1.0296751 2.6862915 2.4653979 2.971808-.2572257.0654053-.5342967.1029946-.8098412.1029946-.1999797 0-.3907999-.0187947-.5808569-.0466107.404934 1.2327897 1.5599819 2.0762891 2.8752798 2.0997368-1.0887093.841353-2.4333459 1.2971153-3.81716869 1.2938228-.25722574 0-.49536944-.0097732-.74267251-.0375893 1.36169346.8630497 2.9798494 1.3599799 4.7216568 1.3599799 5.6536231 0 8.7472013-4.6129556 8.7472013-8.6162132 0-.1308107 0-.2616214-.0099226-.3931838.5995743-.4327694 1.1205962-.9622114 1.5410645-1.5659692-.5629708.2424151-1.1595866.4005355-1.7700488.4691142.6417355-.3758146 1.1223374-.9691898 1.3517708-1.6689638-.6025782.3529048-1.2626416.6003888-1.9509465.7314873-.5617749-.5909034-1.3609302-.9562715-2.2463363-.9562715z" fill="#000000"></path> </g> </g></svg>
+        </div>
+      
+      </header>
+    </div>
+
+   
+    <nav
+      class="navbar navbar-expand-lg d-none d-md-flex"
+      style="background-color: rgba(236, 239, 243, 0.7); height: 4rem;"
+    >
+      <div class="container-fluid">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+          style="margin-right: 15rem;"
+        >
+          <ul
+            class="navbar-nav align-items-center epaisseurDeTexte montserrat fs-6"
           >
-        </li>
-      </ul>
+            <li class="nav-item">
+              <a
+                class="nav-link active  text-dark d-flex align-items-center px-4"
+                href="#"
+                >ACCUEIL</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-4 py-3" href="#">VENTE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-4 py-3" href="#">LOCATION</a>
+            </li>
+            <li class="nav-item nav-link active bg-warning text-white d-flex align-items-center px-4" style=" padding-top: 0.7rem; padding-bottom: 0.8rem;">
+              <a class="nav-link text-white px-2 py-2" href="/html/contact.html"
+              style="height: 100%;"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <main>
-      <section class="formulaireSectionContactezNous">
-        <div class="formulaireVehicule">
+      <section
+      class="container-fluid p-0 position-relative"
+      style="height: 70vh; min-height: 700px; margin-top: -4rem; z-index: -1; background-color: rgba(236, 239, 243, 1);"
+    >
+      <img
+        src="/images/vehicule3bis.jpg"
+        alt="photo d'un véhicule"
+        class="img-fluid w-100 h-70 d-none d-md-block"
+        style="object-fit: cover;"
+      />
+      <div  class="container-fluid p-0 position-relative"
+      style="height: 100vh; margin-top: 12%;" >
+      <img
+        src="/images/vehicule3zoom.jpg"
+        alt="photo d'un véhicule"
+        class="img-fluid w-100 h-70 d-block d-md-none"
+        style="object-fit:cover;"
+      />
+    </div>
+      <div class="d-flex align-items-center position-absolute w-100 h-200"
+      style="top:0; left: 0;">
         
-        </div>
-        <div class="formulaire">
-          <h2>CONTACTEZ NOUS</h2>
-          <form class="formulaireChampACompleter">
-            <div class="formulaireColonne">
-              <label for="prenom">Prénom*</label>
-              <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" />
+        
+        <div class="container-fluid bg-white offset-md-1 col-11 col-md-10 text-dark mt-5 mb-5" style=" box-shadow: 0 6px 6px 6px rgba(0, 0, 0, 0.1);" >
+
+          <h2 class="offset-md-1 offset-1 epaisseurDeTexte mt-5 pt-2 me-5 pe-5 pb-5 display-4">CONTACTEZ NOUS</h2>
+
+          <form class="offset-md-1 offset-1 d-flex flex-column flex-md-row col-12">
+
+            <div class="d-flex flex-column col-10 py-5">
+              <label class="mb-1 montserrat fs-5 fwLabel" for="prenom">Prénom*</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" class="mb-5 py-3 border-0 fs-5" style="padding-left: 30px; font-weight: 600; background-color: rgba(236, 239, 243, 1);"/>
       
-              <label for="email">Email*</label>
-              <input type="email" id="email" name="email" placeholder="Entrez une adresse mail valide" />
+              <label class="mb-1 montserrat fs-5 fwLabel" for="nom">Nom*</label>
+              <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" class="mb-5 py-3 border-0 fs-5" style="padding-left: 30px; font-weight: 600; background-color: rgba(236, 239, 243, 1);"/>
               
-            </div>
+              <label class="mb-1 montserrat fs-5 fwLabel" for="email">Email*</label>
+              <input type="email" id="email" name="email" placeholder="Entrez une adresse mail valide" class="mb-5 py-3 border-0 fs-5" style="padding-left: 30px; font-weight: 600;  background-color: rgba(236, 239, 243, 1);"/>
+              
       
-            <div class="formulaireColonne">
-              <label for="nom">Nom*</label>
-              <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" />
-      
-              <label for="telephone">Téléphone</label>
-              <input type="text" id="telephone" name="telephone" placeholder="Phone number" />
-            </div>
-      
-            <div class="formulaireColonne">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Ecrivez votre message"></textarea>
+              <label class="mb-1 montserrat fs-5 fwLabel" for="telephone">Téléphone</label>
+              <input type="text" id="telephone" name="telephone" placeholder="Phone number" class="mb-5 py-3 border-0 fs-5" style="padding-left: 30px; font-weight: 600; background-color: rgba(236, 239, 243, 1);"/>
            
-              <button class="contactezNous">ENVOYEZ</button>
+              <div class="d-flex flex-column col-12 py-5">
+                <label class="mb-1 montserrat fs-5 fwLabel" for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Ecrivez votre message" 
+                          rows="7" cols="30" 
+                          class=" py-3 border-0 fs-5" 
+                          style="padding-left: 30px; font-weight: 600; resize: none; background-color: rgba(236, 239, 243, 1);"></textarea>
+            </div>
+            
+           
+            <button class="btn btn-secondary col-7 justify-content-center fs-4 montserrat epaisseurDeTexte pt-3 pb-3 pe-5 ps-5 ms-1 me-1" style="border-bottom: rgb(102, 104, 192) 3px solid;">ENVOYEZ</button>
+
+            </div>
             </div>
           </form>
         </div>
+      </div>
       </section>
       
-      
-    </main>
-    <section class="basDePage">
-      <div class="sectionHorairesReseaux">
-        <div class="horairesReseaux">
-          <div>
-            <div class="titreH4">
-              <h4><span class="titreBleu">CLUB </span>AUTO</h4>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Deleniti nostrum beatae vel laudantium tempore.
+      <section class="container-fluid bg-dark text-light py-5" style="margin-top: 800px;">
+        <div
+          class="containerMedia d-flex flex-column flex-lg-row justify-content-center col-7 mt-4"
+        >
+        
+          <div class="col-lg-4 col-lg-4 offset-lg-10 col-12 mb-5">
+            <h6 class="epaisseurDeTexte mb-4">
+              <span class="text-blue">CLUB </span>AUTO
+            </h6>
+            <p class="text-grayLight text-start me-md-5 fs-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              nostrum beatae vel laudantium tempore. Quae odit eius iste sed
+              veritatis totam.
             </p>
           </div>
-          <div class="horairesSemaine">
-            <div class="titreH4">
-              <h4>HORAIRE D'OUVERTURE</h4>
-            </div>
-            <p>Lundi - Samedi :<span class="heure"> 09:00 - 17:00</span></p>
-            <p>Dimanche et jours fériés :<span class="heure"> Fermé</span></p>
-          </div>
-          <div>
-            <div class="titreH4">
-              <h4>NEWSLETTER</h4>
-            </div>
-            <div class="newsletterFormulaire">
-              <form>
-                <input
-                  class="newsletterPlaceholder"
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Entrez votre email"
-                  required
-                />
 
-                <div class="svgFormulaire">
+         
+          <div class="col-lg-4 col-lg-4 col-12 mb-5">
+            <h6 class="epaisseurDeTexte mb-4">HORAIRE D'OUVERTURE</h6>
+            <p class="text-grayLight epaisseurDeTexte mb-1">
+              Lundi - Samedi :
+              <span class="text-white fw-normal">09:00 - 17:00</span>
+            </p>
+            <p class="text-grayLight epaisseurDeTexte">
+              Dimanche et jours fériés :
+              <span class="text-white fw-normal">Fermé</span>
+            </p>
+          </div>
+
+        
+          <div class="col-lg-4 col-md-4 col-12 me-md-5 mb-md-5">
+            <h6 class="epaisseurDeTexte mb-4">NEWSLETTER</h6>
+            <form class="d-flex">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control rounded-0"
+                  placeholder="Entrez votre email"
+                  style="height: 45px;"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-outline-0 p-0"
+                  style="padding: 0;"
+                >
                   <svg
-                    class="svgNewletter"
-                    height="200px"
-                    width="200px"
+                    class="btn-outline"
+                    height="45px"
+                    width="45px"
                     version="1.1"
                     id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -182,70 +270,56 @@
                     xml:space="preserve"
                     fill="#ffffff"
                     stroke="#ffffff"
+                    style="margin-top: -1px; vertical-align: middle;"
                   >
-                    <!-- Rectangle orange plus grand -->
                     <rect width="350%" height="350%" fill="#cc6119" />
-
-                    <!-- Contenu SVG réduit et recentré -->
                     <g
                       id="SVGRepo_iconCarrier"
-                      transform="scale(0.4) translate(400, 400) "
+                      transform="scale(0.4) translate(400, 400)"
                     >
                       <g>
                         <path
                           style="fill: #ffffff;"
-                          d="M69.818,512C31.32,512,0,480.68,0,442.182s31.32-69.818,69.818-69.818s69.818,31.32,69.818,69.818 S108.316,512,69.818,512z"
+                          d="M69.818,512C31.32,512,0,480.68,0,442.182s31.32-69.818,69.818-69.818s69.818,31.32,69.818,69.818S108.316,512,69.818,512z"
                         ></path>
                         <path
                           style="fill: #ffffff;"
-                          d="M290.909,477.091c-19.279,0-34.909-15.63-34.909-34.909C256,339.521,172.48,256,69.818,256 c-19.279,0-34.909-15.63-34.909-34.909s15.63-34.909,34.909-34.909c68.381,0,132.667,26.629,181.019,74.981 c48.353,48.351,74.981,112.639,74.981,181.019C325.818,461.461,310.188,477.091,290.909,477.091z"
+                          d="M290.909,477.091c-19.279,0-34.909-15.63-34.909-34.909C256,339.521,172.48,256,69.818,256c-19.279,0-34.909-15.63-34.909-34.909s15.63-34.909,34.909-34.909c68.381,0,132.667,26.629,181.019,74.981c48.353,48.351,74.981,112.639,74.981,181.019C325.818,461.461,310.188,477.091,290.909,477.091z"
                         ></path>
                         <path
                           style="fill: #ffffff;"
-                          d="M477.091,477.091c-19.279,0-34.909-15.63-34.909-34.909c0-205.322-167.042-372.364-372.364-372.364 c-19.279,0-34.909-15.63-34.909-34.909S50.539,0,69.818,0c59.678,0,117.591,11.696,172.127,34.764 c52.659,22.273,99.945,54.151,140.542,94.749c40.599,40.598,72.476,87.882,94.749,140.542C500.303,324.591,512,382.502,512,442.182 C512,461.461,496.37,477.091,477.091,477.091z"
+                          d="M477.091,477.091c-19.279,0-34.909-15.63-34.909-34.909c0-205.322-167.042-372.364-372.364-372.364c-19.279,0-34.909-15.63-34.909-34.909S50.539,0,69.818,0c59.678,0,117.591,11.696,172.127,34.764c52.659,22.273,99.945,54.151,140.542,94.749c40.599,40.598,72.476,87.882,94.749,140.542C500.303,324.591,512,382.502,512,442.182C512,461.461,496.37,477.091,477.091,477.091z"
                         ></path>
                       </g>
                     </g>
                   </svg>
-                </div>
-              </form>
-              <div>
-                <p>Inscrivez-vous pour recevoir les dernières offres</p>
+                </button>
               </div>
-            </div>
+            </form>
+            <p class="mt-2 text-secondary me-4 fs-5">
+              Inscrivez-vous pour recevoir les dernières offres
+            </p>
           </div>
-          <div>
-            <div class="titreH4">
-              <h4>RESEAUX SOCIAUX</h4>
-            </div>
-            <div class="logoReseaux">
+
+         
+          <div class="col-lg-5 col-lg-4 col-12 mb-5">
+            <h6 class="epaisseurDeTexte mb-4">RESEAUX SOCIAUX</h6>
+            <div class="d-flex gap-3">
+       
               <svg
                 class="logoReseauxFacebook"
-                fill="#3a3d3f"
-                height="200px"
-                width="200px"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 455 455"
-                xml:space="preserve"
+                height="50px"
+                width="50px"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <rect width="100%" height="100%" fill="#ffffff" />
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    style="fill-rule: evenodd; clip-rule: evenodd;"
-                    d="M0,0v455h455V0H0z M301.004,125.217H265.44 c-7.044,0-14.153,7.28-14.153,12.696v36.264h49.647c-1.999,27.807-6.103,53.235-6.103,53.235h-43.798V385h-65.266V227.395h-31.771 v-53.029h31.771v-43.356c0-7.928-1.606-61.009,66.872-61.009h48.366V125.217z"
-                  ></path>
-                </g>
+                <path
+                  d="M0,0v455h455V0H0z M301.004,125.217H265.44c-7.044,0-14.153,7.28-14.153,12.696v36.264h49.647c-1.999,27.807-6.103,53.235-6.103,53.235h-43.798V385h-65.266V227.395h-31.771v-53.029h31.771v-43.356c0-7.928-1.606-61.009,66.872-61.009h48.366V125.217z"
+                  fill="#3a3d3f"
+                />
               </svg>
-
+              
               <svg
                 class="logoReseauxTwitter"
                 viewBox="0 0 16 16"
@@ -253,14 +327,10 @@
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 fill="#3a3d3f"
+                height="50px"
+                width="50px"
               >
                 <rect width="100%" height="100%" fill="#ffffff" />
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
                 <g id="SVGRepo_iconCarrier">
                   <path
                     fill="#3a3d3f"
@@ -268,32 +338,28 @@
                   ></path>
                 </g>
               </svg>
+           
               <svg
                 class="logoReseauxInsta"
                 fill="#ffffff"
+                height="50px"
+                width="50px"
                 viewBox="0 0 1024 1024"
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon"
               >
                 <rect width="100%" height="100%" fill="#3a3d3f" />
-
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
                 <g id="SVGRepo_iconCarrier">
                   <path
                     d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"
                   ></path>
                 </g>
               </svg>
+          
               <svg
                 class="logoReseauxGoogle"
                 fill="#3a3d3f"
-                height="200px"
-                width="200px"
+                height="50px"
+                width="50px"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -302,12 +368,6 @@
                 xml:space="preserve"
               >
                 <rect width="100%" height="100%" fill="#ffffff" />
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
                 <g id="SVGRepo_iconCarrier">
                   <path
                     style="fill-rule: evenodd; clip-rule: evenodd;"
@@ -315,11 +375,12 @@
                   ></path>
                 </g>
               </svg>
+          
               <svg
                 class="logoReseauxYoutube"
                 fill="#3a3d3f"
-                height="200px"
-                width="200px"
+                height="50px"
+                width="50px"
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -328,12 +389,6 @@
                 xml:space="preserve"
               >
                 <rect width="100%" height="100%" fill="#ffffff" />
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
                 <g id="SVGRepo_iconCarrier">
                   <g>
                     <path
@@ -350,12 +405,31 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer id="mainFooter" class="mainFooter">
-    <p>Copyright &copy; Club Auto - Tous droits réservés</p>
-  </footer>
-</div>
+        <hr style="color: #626668 1px solid; margin-left: 10%; width: 80%;" />
+
+        <style>
+          @media (max-width: 990px) {
+            .containerMedia {
+              margin-left: 8.33333%;
+              /* width: 90%; */
+            }
+          }
+          @media (max-width: 750px) {
+            .containerMedia {
+              width: 90%;
+            }
+          }
+        </style>
+      </section>
+
+      <footer
+        class="bg-dark text-grayLight fs-6 text-center py-4 mb-5 pb-5"
+        style="margin-top: -60px;"
+      >
+        <h5 class="fs-6 openSans">
+          Copyright &copy; Club Auto - Tous droits réservés
+        </h5>
+      </footer>
+    </div>
   </body>
 </html>
