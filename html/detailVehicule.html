@@ -11,68 +11,31 @@
    
     <div>
       <header
-        class="headerContainer container-fluid bg-dark py-5 m-0 d-flex align-items-center"
+        class="headerContainer container-fluid bg-dark py-5 m-0 d-flex d-md-flex align-items-center"
       >
-        <div class="col-1"></div>
-
-        <h1
-          class="text-white epaisseurDeTexte display-5 ms-md-5 d-none d-lg-block"
+      
+        <div class="col-xl-1"></div>
+        <div class="d-flex flex-column flex-lg-row">
+          <h1
+          class="text-white epaisseurDeTexte display-custom ms-2 fs-lg-4 ms-lg-5 d-none d-md-block"
         >
-          CLUB AUTO
-        </h1>
-
-        <div class="d-none d-md-flex align-items-center ms-5 me-md-3">
-          <img
-            src="/images/icone-adresse.png"
-            alt="Icône adresse"
-            class="me-2"
-            width="auto"
-            height="45"
-          />
-          <h6 class="text-white m-0 fs-6">
-            <span class="text-warning fw-bold">ADRESSE :</span><br />
-            <span class="fs-6">AVENUE CHARLES DE GAULLE<br />75000 PARIS</span>
-          </h6>
-        </div>
-
-        <div class="phone d-flex align-items-center ms-md-5 me-md-3">
-          <img
-            src="/images/icon-telephone.png"
-            alt="Icône téléphone"
-            class="me-2"
-            width="auto"
-            height="45"
-          />
-          <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
-            <span class="text-warning fw-bold">TÉLÉPHONE :</span><br />
-            <span class="number fs-5 fw-bold">01 23 45 67 89</span>
-          </h6>
-        </div>
-
-        <div class="d-none d-md-flex align-items-center ms-md-5 me-md-3">
-          <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
-            <span class="text-warning fw-bold">OUVERTURE :</span> Du Lundi au
-            Samedi<br />
-            <span class="text-warning fw-bold">HORAIRES :</span> De 9h à 17h
-          </h6>
-        </div>
-
-        <div class="d-none d-md-flex social-media d-flex me-3 ms-5">
-          
-          <svg class="mt-1 me-3" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 291.319 291.319" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#3B599;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659 S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"></path> <path style="fill:#FFFFFF;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055 v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366 C154.791,104.556,158.341,100.277,163.394,100.277z"></path> </g> </g></svg>
-          
-          <svg height="60px" width="60px"  viewBox="-3.2 -3.2 38.40 38.40" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(4.48,4.48), scale(0.72)"><rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="19.2" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd"> <path d="m0 0h32v32h-32z"></path> <path d="m16 0c8.836556 0 16 7.163444 16 16s-7.163444 16-16 16-16-7.163444-16-16 7.163444-16 16-16zm2.8844392 10c-.8155312-.00039875-1.5977768.3185138-2.1744446.8864965s-.9004568 1.338447-.9000516 2.1416957c0 .2345571.0290047.4683624.0763281.693898-2.4735114-.1243416-4.777484-1.275917-6.33981273-3.1687757-.26638508.4495677-.41827803.9652925-.41827803 1.5276281-.0010649 1.0136875.51366356 1.9604572 1.37085286 2.5214884-.50376554-.0187946-.97928966-.1593785-1.3891716-.3841624v.0375893c-.00205712 1.4426342 1.0296751 2.6862915 2.4653979 2.971808-.2572257.0654053-.5342967.1029946-.8098412.1029946-.1999797 0-.3907999-.0187947-.5808569-.0466107.404934 1.2327897 1.5599819 2.0762891 2.8752798 2.0997368-1.0887093.841353-2.4333459 1.2971153-3.81716869 1.2938228-.25722574 0-.49536944-.0097732-.74267251-.0375893 1.36169346.8630497 2.9798494 1.3599799 4.7216568 1.3599799 5.6536231 0 8.7472013-4.6129556 8.7472013-8.6162132 0-.1308107 0-.2616214-.0099226-.3931838.5995743-.4327694 1.1205962-.9622114 1.5410645-1.5659692-.5629708.2424151-1.1595866.4005355-1.7700488.4691142.6417355-.3758146 1.1223374-.9691898 1.3517708-1.6689638-.6025782.3529048-1.2626416.6003888-1.9509465.7314873-.5617749-.5909034-1.3609302-.9562715-2.2463363-.9562715z" fill="#000000"></path> </g> </g></svg>
-        </div>
-
-        <div class="d-md-none ms-auto">
+          CLUB&nbsp;AUTO
+        </h1> 
+          <div class="d-flex d-md-none w-100 justify-content-between">
+        <h1
+          class="text-white epaisseurDeTexte display-custom ms-lg-2 mb-4 "
+        >
+          CLUB&nbsp;AUTO
+        </h1> 
+         <div class="d-md-none d-flex ms-5 mb-4">
           <svg
             class="menuBurger"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             stroke="#6c98e1"
-            height="40px"
-            width="40px"
+            height="50px"
+            width="50px"
           >
             <path
               d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z"
@@ -80,6 +43,74 @@
             ></path>
           </svg>
         </div>
+      </div>
+       
+        <div class="d-none d-md-flex align-items-center ms-lg-5 me-lg-3">
+          <img
+            src="/images/icone-adresse.png"
+            alt="Icône adresse"
+            class="me-lg-2"
+            width="auto"
+            height="60"
+          />
+          <h6 class="text-white m-0 fs-6 me-lg-5">
+            <span class="text-warning fw-bold">ADRESSE :</span><br />
+            <span class="fs-6">AVENUE CHARLES DE GAULLE<br />75000 PARIS</span>
+          </h6>
+        </div>
+       
+        <div class="phone d-flex align-items-center">
+          <img
+            src="/images/icon-telephone.png"
+            alt="Icône téléphone"
+            class="me-lg-2"
+            width="auto"
+            height="60"
+          />
+          <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
+            <span class="text-warning fw-bold">TÉLÉPHONE :</span><br />
+            <span class="number fs-4 fw-bold">01 23 45 67 89</span>
+          </h6>
+        </div>
+      </div>
+        <style>
+          @media (max-width: 767px) {
+            .display-custom {
+              font-size: 3.5rem;
+            }
+      
+            .phone {
+              justify-content: flex-start;
+              margin-left: 1rem;
+            }
+      
+            .phone .number {
+              font-size: 1.75rem !important;
+            }
+          }
+      
+          @media (min-width: 768px) {
+            .fs-md-4 {
+              font-size: 3rem;
+            }
+          }
+        </style>
+      
+        <div class="d-none d-md-flex align-items-center ms-lg-5 me-lg-3  ms-3">
+          <h6 class="text-white m-0 fs-6 epaisseurDeTexte">
+            <span class="text-warning fw-bold">OUVERTURE :</span> Du Lundi au
+            Samedi<br />
+            <span class="text-warning fw-bold">HORAIRES :</span> De 9h à 17h
+          </h6>
+        </div>
+
+        <div class="d-none d-xl-flex social-media d-flex me-lg-3 ms-lg-5 ms-3">
+          
+          <svg class="mt-1 me-3" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 291.319 291.319" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#3B599;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659 S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"></path> <path style="fill:#FFFFFF;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055 v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366 C154.791,104.556,158.341,100.277,163.394,100.277z"></path> </g> </g></svg>
+          
+          <svg height="60px" width="60px"  viewBox="-3.2 -3.2 38.40 38.40" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(4.48,4.48), scale(0.72)"><rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="19.2" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd"> <path d="m0 0h32v32h-32z"></path> <path d="m16 0c8.836556 0 16 7.163444 16 16s-7.163444 16-16 16-16-7.163444-16-16 7.163444-16 16-16zm2.8844392 10c-.8155312-.00039875-1.5977768.3185138-2.1744446.8864965s-.9004568 1.338447-.9000516 2.1416957c0 .2345571.0290047.4683624.0763281.693898-2.4735114-.1243416-4.777484-1.275917-6.33981273-3.1687757-.26638508.4495677-.41827803.9652925-.41827803 1.5276281-.0010649 1.0136875.51366356 1.9604572 1.37085286 2.5214884-.50376554-.0187946-.97928966-.1593785-1.3891716-.3841624v.0375893c-.00205712 1.4426342 1.0296751 2.6862915 2.4653979 2.971808-.2572257.0654053-.5342967.1029946-.8098412.1029946-.1999797 0-.3907999-.0187947-.5808569-.0466107.404934 1.2327897 1.5599819 2.0762891 2.8752798 2.0997368-1.0887093.841353-2.4333459 1.2971153-3.81716869 1.2938228-.25722574 0-.49536944-.0097732-.74267251-.0375893 1.36169346.8630497 2.9798494 1.3599799 4.7216568 1.3599799 5.6536231 0 8.7472013-4.6129556 8.7472013-8.6162132 0-.1308107 0-.2616214-.0099226-.3931838.5995743-.4327694 1.1205962-.9622114 1.5410645-1.5659692-.5629708.2424151-1.1595866.4005355-1.7700488.4691142.6417355-.3758146 1.1223374-.9691898 1.3517708-1.6689638-.6025782.3529048-1.2626416.6003888-1.9509465.7314873-.5617749-.5909034-1.3609302-.9562715-2.2463363-.9562715z" fill="#000000"></path> </g> </g></svg>
+        </div>
+      
       </header>
     </div>
 
@@ -119,42 +150,70 @@
         </div>
       </div>
     </nav>
-    <div class="offset-md-1 mt-3 montserrat">
-      <ol class="breadcrumb ms-5 text-secondary">
+    <div class="ms-md-4 mt-5 pt-5 montserrat mt-md-3 pt-md-0 col-12">
+      <ol class="breadcrumb offset-1 text-secondary col-12 text-grayLight">
         <li class="breadcrumb-item">ACCUEIL</li>
-        <li class="breadcrumb-item">VENTE</li>
-        <li class="breadcrumb-item">BMW 535I, NAVI, LEATHER, ABS</li>
+        <li class="breadcrumb-item">VENTE &nbsp;/ </li>
+        <li class="ms-3 me-5">BMW 535I, NAVI, LEATHER,</span><span class="ms-2"> ABS</span></li>
       </ol>
     </div>
     <div class="offset-md-1">
-    <hr class="ms-5 col-md-10 text-secondary mb-5">
+    <hr class="offset-1 ms-md-4 col-md-10 text-secondary mb-5 col-10">
   </div>
-    <section class="offset-md-1">
-    <div class="ms-5">
-    <h1 class="montserrat epaisseurDeTexte display-5 mb-4">BMW 535i, Navi, Leather, ABS</h1>
-    <div class="img-fluid col-11">
-    <img src="/images/vehicule2.jpg" alt="photo d'un véhicule récent" class="col-8" />
+    <section class="offset-md-1 align-items-center">
+    <div class="ms-4 me-3">
+    <h1 class="bmw montserrat epaisseurDeTexte mb-4 col-9">BMW 535i, Navi, Leather, ABS</h1>
+    <div class="img-fluid col-12 col-md-11">
+    <img src="/images/vehicule2.jpg" alt="photo d'un véhicule récent" class=" col-12 col-xl-9 " />
   </div>
-    <div class="mt-5 epaisseurDeTexte montserrat col-11">
-        <nav class="navbar navbar-expand-md col-8 mb-5"
-        style="background-color:#000000 ; height: 4rem;">
+
+    <div class="mt-5 epaisseurDeTexte montserrat col-md-11 g-0">
+      <div class="accordion align-items-center bg-white mb-5 col-12 d-md-none">
+        <div class="accordion-item bg-dark"  style="border-radius: 0;">
+          <h5 class="accordion-header pb-4 pt-4 text-center text-dark bg-white montserrat fw-bold pt-3 "  style="width: 96%;margin-left: 2%;margin-top: -1%; border-top: #cc6119 6px solid;">DESCRIPTION</h5>
+          <span class="border-left-right"></span>
+        </div>
+        
+        <div class="accordion-item ">
+          <h5 class="accordion-header pb-4 pt-4 text-center text-white bg-dark epaisseurDeTexte">TECHNIQUE</h5>
+        </div>
+        <div class="accordion-item">
+          <h5 class="accordion-header pb-4 pt-4 text-center text-white bg-dark epaisseurDeTexte">OPTIONS</h5>
+        </div>
+        <div class="accordion-item">
+          <h5 class="accordion-header pb-4 pt-4 text-center text-white bg-dark epaisseurDeTexte">CONTACT</h5>
+        </div>
+      </div>
+      <style>
+        .accordion-item {
+          margin-bottom:-1px;
+        }
+      </style>
+<div class="col-md-12 me-0 pe-0">
+        <nav class="navbar navbar-expand-md col-12 col-md-12 col-xl-9 mb-5 d-none d-md-block"
+        style="background-color:#000000 ; height: 4.4rem;">
             <ul class="navbar-nav  align-items-center">
-              <li class="nav-item px-4 py-3" style="background-color:#ffffff ;margin-left: 6px; height: 4.5rem; border-top: #cc6119 5px solid;">DESCRIPTION</li>
+              <li class="nav-item px-4 " style="background-color:#ffffff ;margin-left: 6px;margin-top: -13px;padding-top: 28px; height: 4.8rem; border-top: #cc6119 5px solid;">DESCRIPTION</li>
             <li class="nav-item px-4 text-white">TECHNIQUE</li>
             <li class="nav-item px-4 text-white">OPTIONS</li>
             <li class="nav-item px-4 text-white">CONTACT</li>
           </ul>
         </nav>
-          <div class="mb-5">
-            <h4 class="text-gray fw-normal">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit,
-              architecto tenetur sed animi at vitae commodi expedita odit
-              consequuntur facilis temporibus dolor rerum libero quam adipisci
-              officia
+      </div>
+          <div class="col-11 col-md-9 mb-4 mt-5 pt-4 mt-md-0 pt-md-0">
+            <h4 class="text-dark fs-2 fs-md-6">
+              Quisque imperdiet dignissim enim dictum finibus. Sed consectetutr convallis enim eget laoreet. Aenean vitae nisl mollis, porta risus vel, dapibus lectus. Etiam ac suscipit eros, eget maximus
             </h4>
           </div>
-          <div class="text-gray fw-normal">
-            <p>
+          <style>
+            @media (min-width: 768px) {
+              .fs-md-6 {
+                font-size: 1.5rem !important;
+              }
+            }
+          </style>
+          <div class="col-11 col-md-9 fs-5 text-dark" style="font-weight: 600;">
+            <p class=" openSans">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
               deleniti autem, harum, soluta nisi quia eius quod explicabo
               perspiciatis beatae nobis perferendis natus nam delectus quisquam
@@ -164,38 +223,32 @@
               praesentium voluptates nesciunt quaerat distinctio reprehenderit
               ipsa at.Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Libero deleniti autem, harum, soluta nisi quia eius quod explicabo
-              perspiciatis beatae nobis perferendis natus nam delectus quisquam
-              fuga iusto eaque, doloribus rem! Vitae eaque tempore praesentium
-              nobis ut nihil quibusdam suscipit facilis. Natus harum dignissimos
-              nesciunt odit ipsa assumenda? Laboriosam modi doloremque ratione,
-              praesentium voluptates nesciunt quaerat distinctio reprehenderit
-              ipsa at .
+              perspiciatis beatae nobis Perferendis
             </p>
           </div>
-          <div class="paragraphe3">
-            <p>
+          <div class="col-11 col-md-9 text-grayLight fs-5 " style="font-weight: 500;border-left:6px solid #cc6119;">
+            <p class="ms-5 my-4 fst-italic">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
               aspernatur neque tempora, quod iusto libero voluptatum sit.
-              Maiores tenetur dicta commodi provident, exercitationem assumenda?
+              Maiores tenetur dicta commodi
             </p>
           </div>
-          <div class=" fw-normal">
+          <div class="col-11 col-md-9 fs-4 text-dark mb-5" style="font-weight: 500;">
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
               error, est excepturi reiciendis corrupti temporibus ullam
               assumenda, molestiae eaque nulla a. Temporibus libero amet facere
               maxime, omnis aliquid a repellat modi, quod ratione
-              similique.Libero deleniti autem, harum, soluta nisi quia eius quod
-              explicabo perspiciatis beatae nobis .
+              similique.Libero deleniti autem.
             </p>
           </div>
-          <div class="listeOptions">
-            <h3>OPTIONS</h3>
-            <ul class="puceListe">
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
+          <div class="mb-5 pb-3">
+            <h3 class="epaisseurDeTexte h2 mb-5">OPTIONS</h3>
+            <ul class="fs-5 text-dark list-unstyled" style="font-weight: 600;">
+              <li class="mb-3"><span class="circle-check me-3">✔</span>Lorem ipsum dolor sit amet.</li>
+              <li class="mb-3"><span class="circle-check me-3">✔</span>Lorem ipsum dolor sit amet.</li>
+              <li class="mb-3"><span class="circle-check me-3">✔</span>Lorem ipsum dolor sit amet.</li>
+              <li class="mb-4 pb-5"><span class="circle-check me-3">✔</span>Lorem ipsum dolor sit amet.</li>
             </ul>
           </div>
         </div>
