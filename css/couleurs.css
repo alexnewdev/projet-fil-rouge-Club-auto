@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.epaisseurDeTexte {
+  font-weight: 700;
+}
+body {
+  font-family: "Open Sans";
+  background-color: #ffffff;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.openSans {
+  font-family: "Open Sans";
+}
+:root {
+  --bs-body-bg: #eceff3;
+  --bs-primary: #fab637;
+  --bs-danger: #ff4848;
+  --bs-warning: #cc6119;
+  --bs-dark: #232628;
+  --bs-secondary: #6c98e1;
+  --bs-light: #ffffff;
+  --bs-gray: #373c3f;
+  --bs-grayLight: #aaaaaa;
+}
+
+/* Écraser les classes Bootstrap */
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-warning {
+  color: var(--bs-warning) !important;
+}
+
+.text-danger {
+  color: var(--bs-danger) !important;
+}
+
+.text-dark {
+  color: var(--bs-dark) !important;
+}
+
+.text-light {
+  color: var(--bs-light) !important;
+}
+
+.text-blue {
+  color: var(--bs-secondary) !important;
+}
+.text-gray {
+  color: var(--bs-gray) !important;
+}
+.text-grayLight {
+  color: var(--bs-grayLight) !important;
+}
+
+/* Pour les backgrounds */
+
+.bg-body {
+  color: var(--bs-body-bg) !important;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.bg-warning {
+  background-color: var(--bs-warning) !important;
+}
+
+.bg-danger {
+  background-color: var(--bs-danger) !important;
+}
+
+.bg-dark {
+  background-color: var(--bs-dark) !important;
+}
+
+.bg-light {
+  background-color: var(--bs-light) !important;
+}
+.bg-blue {
+  background-color: var(--bs-secondary) !important;
+}
+.bg-gray {
+  background-color: var(--bs-gray) !important;
+}
+.bg-grayLight {
+  color: var(--bs-grayLight) !important;
+}
+
+.bg-white {
+  background-color: var(--bs-light) !important;
+}
+/* Pour les boutons */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.btn-warning {
+  background-color: var(--bs-warning) !important;
+}
+
+.btn-danger {
+  background-color: var(--bs-danger) !important;
+  border-color: var(--bs-danger) !important;
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
+/* Pour les bordures */
+.border-warning {
+  border-color: var(--bs-warning) !important;
+}
+
+.border-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+.breadcrumb {
+  font-weight: 500;
+}
+.bmw {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* Puces oranges  */
+.circle-check {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background-color: var(--bs-warning);
+  color: var(--bs-light);
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.fwLabel {
+  font-weight: 600;
+}
