@@ -156,3 +156,97 @@ body {
 .fwLabel {
   font-weight: 600;
 }
+.box-sizing-custom {
+  box-sizing: content-box;
+}
+
+@media (max-width: 990px) {
+  .containerMedia {
+    margin-left: 8.33333%;
+    width: 90%;
+  }
+}
+@media (max-width: 750px) {
+  .containerMedia {
+    width: 90%;
+  }
+}
+@media (max-width: 1110px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .col-md-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+  .text-container {
+    max-width: 250px;
+    margin-top: 10px;
+  }
+  .containerPourquoiNousChoisir {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1430px) {
+  .card-column {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .d-lg-block {
+    display: none !important;
+  }
+}
+@media (max-width: 1400px) {
+  .col-1 {
+    display: none !important;
+  }
+}
+@media (max-width: 1050px) {
+  .d-lg-block,
+  #photoAccueil,
+  .social-media,
+  .d-md-flex {
+    display: none !important;
+  }
+
+  .headerContainer {
+    padding-top: 6.5rem !important;
+    width: 100%;
+  }
+
+  .slogan {
+    font-size: 2.4rem;
+    text-align: start !important;
+    margin-bottom: 5%;
+    margin-top: -3%;
+  }
+
+  .sloganContainer {
+    height: auto !important;
+    text-align: start;
+    margin-top: -3%;
+  }
+  .container-fluid {
+    margin-left: 0;
+    padding-left: 0;
+    min-width: 100%;
+  }
+  .phone {
+    justify-content: flex-start;
+  }
+
+  .number {
+    font-size: 1.7rem !important;
+  }
+  .menuBurger {
+    margin-top: -8.5rem;
+  }
+}
