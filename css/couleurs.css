@@ -9,20 +9,20 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
-.epaisseurDeTexte {
-  font-weight: 700;
-}
+
 body {
   font-family: "Open Sans";
   background-color: #ffffff;
-  overflow-x: hidden;
 }
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }
+
 .openSans {
   font-family: "Open Sans";
 }
+
 :root {
   --bs-body-bg: #eceff3;
   --bs-primary: #fab637;
@@ -36,7 +36,6 @@ body {
 }
 
 /* Écraser les classes Bootstrap */
-
 .text-primary {
   color: var(--bs-primary) !important;
 }
@@ -60,15 +59,16 @@ body {
 .text-blue {
   color: var(--bs-secondary) !important;
 }
+
 .text-gray {
   color: var(--bs-gray) !important;
 }
+
 .text-grayLight {
   color: var(--bs-grayLight) !important;
 }
 
 /* Pour les backgrounds */
-
 .bg-body {
   color: var(--bs-body-bg) !important;
 }
@@ -92,12 +92,15 @@ body {
 .bg-light {
   background-color: var(--bs-light) !important;
 }
+
 .bg-blue {
   background-color: var(--bs-secondary) !important;
 }
+
 .bg-gray {
   background-color: var(--bs-gray) !important;
 }
+
 .bg-grayLight {
   color: var(--bs-grayLight) !important;
 }
@@ -105,6 +108,7 @@ body {
 .bg-white {
   background-color: var(--bs-light) !important;
 }
+
 /* Pour les boutons */
 .btn-primary {
   background-color: var(--bs-primary) !important;
@@ -132,15 +136,17 @@ body {
 .border-secondary {
   background-color: var(--bs-secondary) !important;
 }
+
 .breadcrumb {
   font-weight: 500;
 }
+
 .bmw {
   font-size: 2.4rem;
   font-weight: 700;
 }
 
-/* Puces oranges  */
+/* Puces oranges */
 .circle-check {
   display: inline-block;
   width: 18px;
@@ -154,29 +160,39 @@ body {
   font-size: 12px;
 }
 
+/* personnalisation  */
+.custom-fw {
+  font-weight: 700;
+}
+
 .fwLabel {
   font-weight: 600;
 }
+
 .box-sizing-custom {
   box-sizing: border-box;
 }
 
+/* Media Queries */
 @media (max-width: 990px) {
   .containerMedia {
     margin-left: 8.33333%;
     width: 90%;
   }
 }
+
 @media (max-width: 750px) {
   .containerMedia {
     width: 90%;
   }
 }
+
 @media (max-width: 1110px) {
   .container {
-    width: 100%;
+    width: 90%;
   }
 }
+
 @media (max-width: 1000px) {
   .col-md-3 {
     display: flex;
@@ -185,31 +201,37 @@ body {
     justify-content: center;
     text-align: left;
   }
+
   .text-container {
     max-width: 250px;
     margin-top: 10px;
   }
+
   .containerPourquoiNousChoisir {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
+
 @media (max-width: 1430px) {
   .card-column {
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
+
 @media (max-width: 992px) {
   .d-lg-block {
     display: none !important;
   }
 }
+
 @media (max-width: 1400px) {
   .col-1 {
     display: none !important;
   }
 }
+
 @media (max-width: 1050px) {
   .d-lg-block,
   #photoAccueil,
@@ -235,11 +257,13 @@ body {
     text-align: start;
     margin-top: -3%;
   }
+
   .container-fluid {
     margin-left: 0;
     padding-left: 0;
     min-width: 100%;
   }
+
   .phone {
     justify-content: flex-start;
   }
@@ -247,6 +271,19 @@ body {
   .number {
     font-size: 1.7rem !important;
   }
+
+  @media (max-width: 767px) {
+    .display-custom {
+      font-size: clamp(2.7rem, -1.5rem + 8vw, 3.5rem);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .fs-md-4 {
+      font-size: 3rem;
+    }
+  }
+
   .menuBurger {
     margin-top: -8.5rem;
   }
